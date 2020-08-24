@@ -1,0 +1,341 @@
+grammar uw.cs.watform.forml.Forml with org.eclipse.xtext.common.Terminals
+
+generate forml "http://www.cs.uw/watform/forml/Forml"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+// Add ctrl for entity, composition, aggregation, attribute, and association
+System:
+	{System}
+	((worldmodel=WorldModel)? & (behaviourmodel=BehaviourModel)?);
+
+	/**
+ * World Model
+ */
+WorldModel:
+	{WorldModel} ('World' '{'
+	(concepts+=Concept*
+	constraints=Constraint?)
+	'}');
+
+Constraint:
+	{Constraint} 'Constraints' '{' (predicates+=Predicate* &
+	macro+=Macro*) '}';
+
+ExprRef:
+	Concept|Attribute
+;
+
+Concept returns ExprRef:
+	Entity | Relationship | SPL | Message | Feature | Enumeration | //is enum a concept or its constants are concept ?!
+	UndefinedType;
+
+Relationship returns Concept:
+	Association | Aggregation | Composition;
+
+Roleable returns Concept:
+	Entity | Feature;
+
+Entity returns Roleable:
+	{Entity} 'abstract'? (ctrl?='ctrl')? 'entity' name=ID ('extends' superType=[Entity])? ('{' attributes+=Attribute*
+	functions+=Function* '}')?;
+
+Association returns Relationship:
+	{Association} (ctrl?='ctrl')? 'association' name=ID '{' (attributes+=Attribute* & (srcRole=Role & desRole=Role)) '}';
+
+Attribute returns ExprRef:
+	{Attribute} (ctrl?='ctrl')? 'attribute' name=ID ('[' multiplicity=Multiplicity ']')? ':' type=AttributeType?;
+
+AttributeType:
+	ReferenceType | IntType | BoolType |StringType| UndefinedType;
+
+StringType:
+	{StringType} "string" | "String";
+
+
+Function returns ExprRef:
+	{Function} 'function' name=ID ':' (type=AttributeType)?;
+
+IntType:
+	{IntType} "int" | "Integer";
+
+BoolType:
+	{BoolType} "bool" | "Boolean";
+
+ReferenceType:
+	ref=[Concept];
+
+UndefinedType returns Concept:
+	{UndefinedType} 'undefined_type' name=ID;
+
+Multiplicity:
+	(value=INT | many='*') | cardinality=Cardinality;
+
+Cardinality:
+	(lower=INT '..' (upper=INT | many='*'));
+
+	/*
+ * Role needs to be Entity, or Feature
+ * Future work in order to support multiple SPLs make SPL also a role
+ */
+// TODO FUTUREWORK: Allow for SPLs to be roleable
+Role returns Role:
+	'role' {Role} name=ID ('[' multiplicity=Multiplicity ']')? ':' type=[Roleable];
+
+Aggregation returns Relationship:
+	{Aggregation} (ctrl?='ctrl')? 'aggregation' name=ID '{' ('whole' whole=Decl & 'part' part=Decl) '}';
+
+Composition returns Relationship:
+	{Composition} (ctrl?='ctrl')? 'composition' name=ID '{' ('whole' whole=Decl & 'part' part=Decl) '}';
+
+Decl:
+	{Decl} name=ID ('[' multiplicity=Multiplicity ']')? ':' type=[Entity];
+
+CompDecl returns Decl:
+	{CompDecl} name=ID ':' type=[Entity];
+
+IdList:
+	ID (',' ID)*;
+
+	/*
+ * FUTUREWORK: IO messages for multiple SPLs
+ */
+Message returns Concept:
+	(Input | Output);
+
+Input returns Message:
+	{Input} 'input' name=ID '{' ('type' type=AttributeType)? attributes+=Attribute* ('to' (tos+=[Feature])*)? '}';
+
+Output returns Message:
+	{Output} 'output' name=ID '{' ('type' type=AttributeType)? attributes+=Attribute* ('from' (froms+=[Feature])*)? '}';
+
+InputList:
+	{InputList} 'inputs' '{' (inputs+=RefMessage (',' inputs+=RefMessage)*)? '}';
+
+OutputList:
+	{OutputList} 'outputs' '{' (outputs+=RefMessage (',' outputs+=RefMessage)*)? '}';
+
+RefMessage:
+	{RefMessage} refMsg=[Message];
+
+	/*
+ * Add input and output lists for messages
+ * FUTUREWORK: Third messsage list for IO
+ */
+Feature returns Roleable:
+	{Feature} 'feature' name=ID ('{' (attributes+=Attribute* (inputlist=InputList)? (outputlist=OutputList)?) '}')?;
+
+SPL returns Node:
+	{SPL} 'SPL' name=ID '{' (featureNodes+=FeatureNode* xors+=XORNode* ands+=AndNode* ors+=OrNode*) '}';
+
+XORNode returns Node:
+	{XORNode} 'XOR' '{' featureNodes+=FeatureNode featureNodes+=(FeatureNode)+ '}';
+
+AndNode returns Node:
+	{AndNode} 'AND' '{' featureNodes+=FeatureNode featureNodes+=(FeatureNode)+ '}';
+
+OrNode returns Node:
+	{OrNode} 'OR' '{' featureNodes+=FeatureNode featureNodes+=(FeatureNode)+ '}';
+
+	// TODO: Featurnodes need multiplicity, unless inside a binary operator node.
+// TODO: Try to force indentation for them
+FeatureNode returns Node:
+	{FeatureNode} 'FeatureNode' feature=[Feature] ('[' multiplicity=Multiplicity ']')? ('{' (featureNodes+=FeatureNode*
+	xors+=XORNode* ands+=AndNode* ors+=OrNode*) '}')?;
+
+Enumeration returns Concept:
+	{Enumeration} 'enum' name=ID '{' (constant+=EnumConst (',' constant+=EnumConst)*) '}';
+
+EnumConst returns ExprRef:
+	{EnumConst} name=ID;
+
+	/**
+ * Behaviour Model
+ */
+BehaviourModel:
+	{BehaviourModel} 'Behaviour' '{' featuremodules+=FeatureModule* '}';
+
+FeatureModule:
+	'FeatureModule' featureref=[Roleable] '{' (constraints=Constraint? & statemachine+=StateMachine* &
+	fragments+=Fragment*) '}';
+
+StateMachine:
+	'statemachine' name=ID '{' (regions+=Region+ & transitions+=Transition*) '}';
+
+InitState:
+	{InitState} 'init' '=' stateref=[State]?;
+
+State returns Component:
+	{State} 'state' name=ID '{' regions+=Region* '}';
+
+Region returns Component:
+	{Region} 'region' name=ID '{' init=InitState? states+=State* '}';
+
+Transition: //; returns Modifiable:
+	{Transition} 'transition' name=ID priority=Priority? ':' src=[State|QualifiedName] '->' dst=[State|QualifiedName] '{'
+	trig=Trigger? guard=Guard? (list=WCAList)? '}';
+
+	// This should be list of transitions - it has priority over all of those
+Priority:
+	'>' translist=TransList;
+
+TransList:
+	transitions+=[Transition] (',' transitions+=[Transition])*;
+
+Guard:
+	{Guard} ('[' predicate=Predicate? ']' | '[]');
+
+	// When/After is timing requirements delete/comment for later.
+// TODO: FUTURE timing requirements.
+Trigger:
+	{Trigger} 'event:' (override=Override | wce=WCE)?
+	/*| 'when' ID
+	| 'after' ID)*/;
+
+Override:
+	'override' '(' transition=[Transition] ')';
+
+	// Can also have minus for removing concept
+// and a ~ as well for when an attribute changes. (this is the dot accessing)
+// Might need input?.
+WCE:
+	(addobj=[ExprRef|QualifiedName] '+') | (attr=[Attribute|QualifiedName]) | (remobj=[ExprRef|QualifiedName] '-');
+
+WCAList:
+	{WCAList} '/' (actions+=WCA (',' actions+=WCA)*)?;
+
+WCA: //; returns Modifiable:
+	{WCA} name=ID '{' action=Action?
+	//override=Override?
+	//guard=Guard? |
+	'}';
+
+	// involved with scoping/xtext index stuff. 
+Action
+// First ID is actual name we can reference this new object with, second ID is type . in first alternative.
+//:{Action} (name=ID '=')? '+' type=[Concept] ('(' list+=AssignList ')')?
+:
+	{Action} '+' type=[ExprRef|QualifiedName]
+	// Bang is for outputting message?
+	| '!' out=[Output] '(' list+=AssignList ')' | '-' minexpr=setExpr | (lvalue=setExpr)? ':=' (rvalue=setExpr)? | (lvalue=intExpr)
+	':=' (rvalue=intExpr);
+
+AssignList:
+	list+=Assign (',' list+=Assign)*;
+
+Assign:
+	ref=[ExprRef] '=' sexpr=(setExpr | intExpr);
+
+	/**
+ * Expressions
+ */
+Macro:
+	'let' name=ID '=' expr=(setExpr | intExpr);
+
+Predicate:
+	(logicop=('no' | 'lone' | 'one' | 'some' | 'all') var=Variable ':' sexpr=setExpr '|')? quantPred=notPred;
+
+notPred:
+	'not' pred=Predicate | pred=andPred;
+
+andPred:
+	preds+=impPred ('and' preds+=impPred)*;
+
+impPred:
+	preds+=orPred (logicop+=('implies' | 'iff') preds+=orPred)*;
+
+orPred:
+	preds+=basePred ('or' preds+=basePred)*;
+
+basePred:
+	logicop=('no' | 'lone' | 'one' | 'some' | 'all') cardpred=setExpr | setlhs=predExpr logicop=('in' | '=')
+	setrhs=predExpr? | setlhs=predExpr logicop=('in' | '=') boolrhs=boolExpr | intlhs=intExpr op=('=' | '<>' | '>' | '<'
+	| '>=' | '=>' | '<=' | '=<') intrhs=intExpr? | '(' parenPred=Predicate ')';
+
+boolExpr:
+	isTrue='true' | isFalse='false';
+
+predExpr:
+	expr+=predExpr2 ('&' expr+=predExpr2)*;
+
+predExpr2:
+	expr+=predExpr3 (op+=('-' | '+') expr+=predExpr3)*;
+
+predExpr3:
+	base=setExprBase;
+
+setExpr:
+	expr+=setExpr2 ('&' expr+=setExpr2)*;
+
+setExpr2:
+	expr+=setExpr3 (op+=('-' | '+') expr+=setExpr3)*;
+
+setExpr3:
+	'(' paren=setExprBase ')' | base=setExprBase;
+
+setExprBase:
+	(atom=atomic) | unspec=unspecified;
+
+intExpr:
+	lhs=multExpr (op+=('+' | '-') rhs+=multExpr)*;
+
+multExpr:
+	lhs=intBase (op+=('*' | '/') rhs+=intBase)*;
+
+intBase:
+	'#'(atom=atomic)| num=INT;
+
+atomic:
+	none='none' |
+	//TODO: Repair this portion of the rule. Currently, only ExprRef tails are permitted.
+	//ref=[ExprRef] ('.' tail=[ExprRef|QualifiedName])? '@pre'? | 
+	ref=[ExprRef|QualifiedName] '@pre'? | refs=[ExprRef|QualifiedName] 's' '@pre'?;
+
+unspecified:
+	ref=[ExprRef] '()' '@pre'?;
+
+setOper:
+	'+' | '-' | '&';
+
+Variable returns ExprRef:
+	{Variable} name=ID;
+
+	/**
+ * FRAGMENTS
+ */
+Fragment:
+	{Fragment} 'fragment' name=ID '{' fragmentType+=FragmentType* '}';
+
+FragmentType:
+	(state=StateContext | region=RegionContext | frag=TranFragment | statemachine=StateMachineContext) &
+	transitions+=Transition*;
+
+	// Drop newregions, reference the state and add new regions to it.
+StateContext:
+	{StateContext} 'StateFragment' '{' 'state' ref=[State|QualifiedName] regions+=Region* '}';
+
+	// Drop newstates we're referencing SM or region and we're adding to them
+// Probably need to seperate SMs and regions to add transitions to SMs
+RegionContext:
+	{RegionContext} 'RegionFragment' '{' 'region' ref=[Region|QualifiedName] states+=State* '}';
+
+StateMachineContext:
+	{StateMachineContext} 'SMFragment' '{' 'statemachine' ref=[StateMachine|QualifiedName] state+=State*;
+
+TranFragment:
+	'TransitionFragment' '{' ref=[Transition|QualifiedName] ':' trig=Trigger? fragType=(Guard)
+	//fragType=(Guard | NewClause)?
+	('/' list=WCAList? fragList=WCAFragmentList?)? '}';
+
+WCAFragmentList:
+	frag+=WCAFragment (',' frag+=WCAFragment)*;
+
+WCAFragment:
+	{WCAFragment} ref=[WCA|QualifiedName] ':' fragType=(Guard);
+	//fragType=(Guard | NewClause);
+
+// TODO allow for named strengthening clauses not just setexpr
+//NewClause:
+//'[' ('weaken' | 'strengthen')
+//ref=[Modifiable]? 'with' clause=setExpr ':' pred=Predicate ']';
+QualifiedName:
+	ID ('.' ID)*;

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/uw.cs.watform.forml/src-gen" editDirectory="/uw.cs.watform.forml.edit/src"
+    editorDirectory="/uw.cs.watform.forml.editor/src" modelPluginID="uw.cs.watform.forml"
+    forceOverwrite="true" modelName="Forml" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="6.0" copyrightFields="false" editPluginID="uw.cs.watform.forml.edit"
+    editorPluginID="uw.cs.watform.forml.editor" runtimeVersion="2.17">
+  <genPackages prefix="Forml" basePackage="uw.cs.watform.forml" disposableProviderFactory="true"
+      fileExtensions="forml" ecorePackage="Forml.ecore#/">
+    <genClasses ecoreClass="Forml.ecore#//System">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//System/worldmodel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//System/behaviourmodel"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//WorldModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//WorldModel/concepts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//WorldModel/constraints"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Constraint">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Constraint/predicates"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Constraint/macro"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//ExprRef"/>
+    <genClasses ecoreClass="Forml.ecore#//Concept">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Concept/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Roleable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Roleable/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Relationship">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Relationship/ctrl"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//AttributeType"/>
+    <genClasses ecoreClass="Forml.ecore#//StringType"/>
+    <genClasses ecoreClass="Forml.ecore#//IntType"/>
+    <genClasses ecoreClass="Forml.ecore#//BoolType"/>
+    <genClasses ecoreClass="Forml.ecore#//ReferenceType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//ReferenceType/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Multiplicity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Multiplicity/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Multiplicity/many"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Multiplicity/cardinality"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Cardinality">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Cardinality/lower"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Cardinality/upper"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Cardinality/many"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Role">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Role/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Role/multiplicity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Role/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Decl">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Decl/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Decl/multiplicity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Decl/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Message">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Message/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Message/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//InputList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//InputList/inputs"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//OutputList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//OutputList/outputs"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//RefMessage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//RefMessage/refMsg"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Node">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Node/featureNodes"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//BehaviourModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//BehaviourModel/featuremodules"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//FeatureModule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureModule/featureref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureModule/constraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureModule/statemachine"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureModule/fragments"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//StateMachine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//StateMachine/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//StateMachine/regions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//StateMachine/transitions"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//InitState">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//InitState/stateref"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Component">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Component/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Transition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Transition/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Transition/priority"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Transition/src"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Transition/dst"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Transition/trig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Transition/guard"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Transition/list"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Priority">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Priority/translist"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//TransList">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//TransList/transitions"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Guard">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Guard/predicate"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Trigger">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Trigger/override"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Trigger/wce"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Override">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Override/transition"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//WCE">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//WCE/addobj"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//WCE/attr"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//WCE/remobj"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//WCAList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//WCAList/actions"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//WCA">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//WCA/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//WCA/action"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Action">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Action/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Action/out"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Action/list"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Action/minexpr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Action/lvalue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Action/rvalue"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//AssignList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//AssignList/list"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Assign">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Assign/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Assign/sexpr"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Macro">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Macro/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Macro/expr"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Predicate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Predicate/logicop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Predicate/var"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Predicate/sexpr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Predicate/quantPred"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//notPred">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//notPred/pred"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//andPred">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//andPred/preds"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//impPred">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//impPred/preds"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//impPred/logicop"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//orPred">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//orPred/preds"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//basePred">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//basePred/logicop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//basePred/cardpred"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//basePred/setlhs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//basePred/setrhs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//basePred/boolrhs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//basePred/intlhs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//basePred/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//basePred/intrhs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//basePred/parenPred"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//boolExpr">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//boolExpr/isTrue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//boolExpr/isFalse"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//predExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//predExpr/expr"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//predExpr2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//predExpr2/expr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//predExpr2/op"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//predExpr3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//predExpr3/base"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//setExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//setExpr/expr"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//setExpr2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//setExpr2/expr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//setExpr2/op"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//setExpr3">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//setExpr3/paren"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//setExpr3/base"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//setExprBase">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//setExprBase/atom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//setExprBase/unspec"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//intExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//intExpr/lhs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//intExpr/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//intExpr/rhs"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//multExpr">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//multExpr/lhs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//multExpr/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//multExpr/rhs"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//intBase">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//intBase/atom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//intBase/num"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//atomic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//atomic/none"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//atomic/ref"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//atomic/refs"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//unspecified">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//unspecified/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Fragment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Fragment/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Fragment/fragmentType"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//FragmentType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FragmentType/state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FragmentType/region"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FragmentType/frag"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FragmentType/statemachine"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FragmentType/transitions"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//StateContext">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//StateContext/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//StateContext/regions"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//RegionContext">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//RegionContext/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//RegionContext/states"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//StateMachineContext">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//StateMachineContext/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//StateMachineContext/state"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//TranFragment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//TranFragment/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//TranFragment/trig"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//TranFragment/fragType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//TranFragment/list"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//TranFragment/fragList"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//WCAFragmentList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//WCAFragmentList/frag"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//WCAFragment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//WCAFragment/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//WCAFragment/fragType"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Entity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Entity/ctrl"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Entity/superType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Entity/functions"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Association">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Association/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Association/srcRole"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Association/desRole"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Attribute/ctrl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Attribute/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Attribute/multiplicity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Function">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Function/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Function/type"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//UndefinedType"/>
+    <genClasses ecoreClass="Forml.ecore#//Aggregation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Aggregation/whole"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Aggregation/part"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Composition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Composition/whole"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Composition/part"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//CompDecl"/>
+    <genClasses ecoreClass="Forml.ecore#//Input">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Input/tos"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Output">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//Output/froms"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Feature">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Feature/inputlist"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Feature/outputlist"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//SPL">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//SPL/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//SPL/xors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//SPL/ands"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//SPL/ors"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//XORNode"/>
+    <genClasses ecoreClass="Forml.ecore#//AndNode"/>
+    <genClasses ecoreClass="Forml.ecore#//OrNode"/>
+    <genClasses ecoreClass="Forml.ecore#//FeatureNode">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureNode/feature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureNode/multiplicity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureNode/xors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureNode/ands"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//FeatureNode/ors"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Enumeration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Enumeration/constant"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//EnumConst">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//EnumConst/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//State">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//State/regions"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Region">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Region/init"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Forml.ecore#//Region/states"/>
+    </genClasses>
+    <genClasses ecoreClass="Forml.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Forml.ecore#//Variable/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

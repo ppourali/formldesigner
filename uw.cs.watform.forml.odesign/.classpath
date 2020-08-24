@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="services"/>
+	<classpathentry kind="src" path="extensions"/>
+	<classpathentry kind="src" path="GUI"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="D:/Programs/Eclipse Modeling/eclipse-modeling-photon-R-win32-x86_64/plugins/org.eclipse.emf.compare.diff_1.3.2.v20120918-1125.jar"/>
+	<classpathentry kind="lib" path="D:/Programs/Eclipse Modeling/eclipse-modeling-photon-R-win32-x86_64/plugins/org.eclipse.emf.compare.match_1.3.2.v20120918-1125.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: uw.cs.watform.forml.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: uw.cs.watform.forml.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: uw.cs.watform.forml;visibility:=reexport,
+ org.eclipse.xtext.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.ui,
+ org.eclipse.xtext.builder,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtext.common.types.ui,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.compare
+Import-Package: org.apache.log4j,
+ uw.cs.watform.forml.services.DistanceBasedRanking,
+ uw.cs.watform.forml.services.virtualresource
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: uw.cs.watform.forml.ui.quickfix,
+ uw.cs.watform.forml.ui.contentassist,
+ uw.cs.watform.forml.ui.internal,
+ uw.cs.watform.forml.ui.contentassist.antlr,
+ uw.cs.watform.forml.ui.contentassist.antlr.internal
+Bundle-Activator: uw.cs.watform.forml.ui.internal.FormlActivator

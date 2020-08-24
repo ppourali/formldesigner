@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+ <extension
+       point="org.eclipse.sirius.externalJavaAction">
+      <javaActions
+            actionClass="uw.cs.watform.forml.extensions.Ext_OpenEmbeddedEditor"
+            id="uw.cs.watform.forml.extensions.Ext_OpenEmbeddedEditor">
+      </javaActions>
+   </extension>
+   
+<extension
+      point="org.eclipse.sirius.componentization">
+    <component class="uw.cs.watform.forml.odesign.Activator"
+               id="uw.cs.watform.forml.odesign"
+	       name="forml">
+    </component>
+  </extension>
+  
+     <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">
+        <editpartProvider
+              class="uw.cs.watform.forml.extensions.Ext_UMLEditPartProvider">
+           <Priority
+                 name="High">
+           </Priority>
+        </editpartProvider>
+	   </extension>
+	   <extension
+        point="org.eclipse.sirius.refreshExtensionProvider">
+     <refreshExtensionProvider
+           priority="highest"
+           providerClass="uw.cs.watform.forml.extensions.EX_CustomRefreshExtensionProvider">
+     </refreshExtensionProvider>
+  </extension>
+	    <extension
+         point="org.eclipse.sirius.common.resourceSetFactory">
+      <factory
+            class="uw.cs.watform.forml.sirius.common.xtext.internal.XTextResourceSetFactory">
+      </factory>
+   </extension>
+   
+   <extension
+         point="org.eclipse.sirius.sessionManagerListener">
+      <listener
+            class="uw.cs.watform.forml.sirius.common.xtext.internal.XtextSessionManagerListener">
+      </listener>
+  
+   </extension>
+	   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">
+  <editpartProvider class="uw.cs.watform.forml.extensions.Ext_CustomEditPartProvider">
+    <Priority name="High"/>
+  </editpartProvider>
+</extension>
+    <extension
+          point="org.eclipse.sirius.diagram.ui.layoutProvider">
+       <layoutProvider
+             providerClass="uw.cs.watform.forml.extensions.Ext_CustomLayoutProvider">
+       </layoutProvider>
+    </extension>
+    <extension
+          point="org.eclipse.ui.views">
+       <view
+             allowMultiple="false"
+             class="uw.cs.watform.forml.extensions.ViewPart_PropertyEditor"
+             id="com.uwaterloo.cs.forml.odesign.PropertyEditor"
+             name="Property Editor"
+             restorable="true">
+       </view>
+    </extension>
+    <extension
+          point="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders">
+       <editpolicyProvider
+             class="uw.cs.watform.forml.extensions.Ext_SelectionPolicyProvider">
+          <Priority
+                name="High">
+          </Priority>
+       </editpolicyProvider>
+     </extension>
+    <extension
+          point="org.eclipse.eef.ide.ui.eefLifecycleManagerProvider">
+       <descriptor
+             class="uw.cs.watform.forml.extensions.Ext_CustomEEFLifecycleManagerProvider"
+             description="CustomWidgetPropertiesDescription"
+             id="uw.cs.watform.forml.odesign.descriptor"
+             label="uw.cs.watform.forml.extensions.Ext_CustomEEFLifecycleManagerProvider">
+       </descriptor>
+       <descriptor
+             class="uw.cs.watform.forml.extensions.Ext_CustomEEFLifecycleManagerProvider"
+             description="CustomWidgetPropertiesDescription"
+             id="uw.cs.watform.forml.odesign.descriptor"
+             label="uw.cs.watform.forml.extensions.Ext_CustomEEFLifecycleManagerProvider">
+       </descriptor>
+    </extension>
+      
+    
+     
+
+</plugin>
