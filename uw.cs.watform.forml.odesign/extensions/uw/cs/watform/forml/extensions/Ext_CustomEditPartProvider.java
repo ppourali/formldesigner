@@ -1,35 +1,11 @@
 package uw.cs.watform.forml.extensions;
 
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.gef.EditPart;
-import org.eclipse.gef.EditPolicy;
-import org.eclipse.gef.NodeEditPart;
-import org.eclipse.gef.util.EditPartUtilities;
-import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.services.editpart.AbstractEditPartProvider;
-import org.eclipse.gmf.runtime.diagram.ui.services.editpart.EditPartService;
-import org.eclipse.gmf.runtime.diagram.ui.util.EditPartUtil;
-import org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx;
-import org.eclipse.gmf.runtime.notation.Node;
 import org.eclipse.gmf.runtime.notation.View;
-import org.eclipse.sirius.diagram.ArrangeConstraint;
-import org.eclipse.sirius.diagram.DEdge;
-import org.eclipse.sirius.diagram.DNode;
-import org.eclipse.sirius.diagram.DNodeContainer;
-import org.eclipse.sirius.diagram.WorkspaceImage;
-import org.eclipse.sirius.diagram.business.internal.metamodel.spec.DEdgeSpec;
 import org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeContainerSpec;
-import org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeSpec;
-import org.eclipse.sirius.diagram.ui.tools.api.util.EditPartTools;
-import org.eclipse.sirius.diagram.ui.tools.internal.util.EditPartQuery;
 
-import uw.cs.watform.forml.extensions.customStyles.PreferredSizeHandlerEditPolicy;
-import uw.cs.watform.forml.extensions.customStyles.TransitionEditPart;
-import uw.cs.watform.forml.forml.OrNode;
 import uw.cs.watform.forml.forml.Region;
 import uw.cs.watform.forml.forml.State;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 public class Ext_CustomEditPartProvider extends AbstractEditPartProvider {
 	@SuppressWarnings({ "restriction", "rawtypes", "unused" })

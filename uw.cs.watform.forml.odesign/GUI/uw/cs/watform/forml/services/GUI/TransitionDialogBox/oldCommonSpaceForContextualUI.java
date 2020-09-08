@@ -1,26 +1,5 @@
 package uw.cs.watform.forml.services.GUI.TransitionDialogBox;
 
-import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.emf.transaction.RecordingCommand;
-import org.eclipse.swt.custom.StyledText;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Shell;
-import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
-
-import uw.cs.watform.forml.forml.Attribute;
-import uw.cs.watform.forml.forml.System;
-import uw.cs.watform.forml.forml.BoolType;
-import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.Input;
-import uw.cs.watform.forml.forml.Output;
-import uw.cs.watform.forml.forml.RefMessage;
-import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.services.utilities.ModelOperations2;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.viewpoint.xtext.support.XtextEmbeddedEditorForContextualUI;
-
 public class oldCommonSpaceForContextualUI {
 	/*
 	private Roleable currentClass;

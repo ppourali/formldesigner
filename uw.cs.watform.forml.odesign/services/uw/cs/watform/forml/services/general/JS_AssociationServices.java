@@ -10,44 +10,21 @@
  *******************************************************************************/
 package uw.cs.watform.forml.services.general;
 
-import java.util.Collection;
-import java.util.List;
-
-import javax.swing.JOptionPane;
-
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.sirius.business.api.dialect.DialectManager;
-import org.eclipse.sirius.business.api.session.Session;
-import org.eclipse.sirius.business.api.session.SessionManager;
-import org.eclipse.sirius.diagram.DSemanticDiagram;
-import org.eclipse.sirius.viewpoint.DRepresentation;
-import org.eclipse.sirius.viewpoint.DSemanticDecorator;
-import org.eclipse.sirius.viewpoint.description.RepresentationDescription;
-import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
-import org.eclipse.sirius.ui.business.internal.dialect.DialectUIManagerImpl;
-import org.eclipse.sirius.viewpoint.DRepresentation;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.internal.Model;
-
-import com.google.common.base.Function;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Ordering;
 
 import uw.cs.watform.forml.extensions.Ext_UMLEditPartProvider;
 import uw.cs.watform.forml.extensions.services.LabelServices;
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.impl.*;
-import uw.cs.watform.forml.services.GUI.CustomMessageDialog;
+import uw.cs.watform.forml.forml.Aggregation;
+import uw.cs.watform.forml.forml.Association;
+import uw.cs.watform.forml.forml.Composition;
+import uw.cs.watform.forml.forml.Decl;
+import uw.cs.watform.forml.forml.FeatureNode;
+import uw.cs.watform.forml.forml.FormlFactory;
+import uw.cs.watform.forml.forml.Multiplicity;
+import uw.cs.watform.forml.forml.Role;
 import uw.cs.watform.forml.services.GUI.FrmSetCardinalityForAssociations;
 import uw.cs.watform.forml.services.GUI.FrmSetCardinalityForCompositionAggregation;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.WorldModelCommonServices;
-import sun.java2d.cmm.Profile;
-import sun.security.acl.WorldGroupImpl;
 
 /**
  * All the services related to Associations, Aggregations and Associations.

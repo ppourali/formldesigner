@@ -1,26 +1,15 @@
 package uw.cs.watform.forml.services.general;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.swing.JOptionPane;
-import javax.swing.table.TableModel;
 
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.NotEnabledException;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommandService;
 
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.impl.*;
-import uw.cs.watform.forml.services.GUI.*;
+import uw.cs.watform.forml.forml.Region;
+import uw.cs.watform.forml.forml.State;
+import uw.cs.watform.forml.forml.StateContext;
+import uw.cs.watform.forml.forml.impl.FeatureModuleImpl;
+import uw.cs.watform.forml.forml.impl.RegionImpl;
+import uw.cs.watform.forml.forml.impl.StateImpl;
 
 /**
  * All the services related to Fragments.

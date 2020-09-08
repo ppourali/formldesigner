@@ -1,80 +1,62 @@
 package uw.cs.watform.forml.services.GUI;
 
-import javax.swing.JFrame;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JPopupMenu;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import java.util.EventObject;
+import java.util.List;
+
 import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
 import javax.swing.DefaultCellEditor;
+import javax.swing.ImageIcon;
+import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
-import java.awt.MouseInfo;
-import java.awt.Toolkit;
-import java.awt.Window.Type;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.EventObject;
-import java.util.List;
-import java.util.Vector;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.Color;
-
-import javax.swing.JTable;
-import javax.swing.KeyStroke;
-
-import java.awt.BorderLayout;
-
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableModel;
-import javax.swing.text.JTextComponent;
-
-import org.eclipse.emf.common.command.CommandStack;
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.transaction.RecordingCommand;
-import org.eclipse.emf.transaction.TransactionalEditingDomain;
-import org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart;
-
-import javax.swing.ListSelectionModel;
-import javax.swing.JScrollPane;
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.impl.*;
-import uw.cs.watform.forml.services.rename.NameUniquenessVerifier;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
-
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.event.CellEditorListener;
-import javax.swing.event.ChangeEvent;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
-import javax.swing.JTextField;
-import javax.swing.JSplitPane;
-import javax.swing.JPanel;
-import javax.swing.JSeparator;
-import java.awt.GridLayout;
-import java.awt.Component;
-import java.awt.Font;
-import javax.swing.ImageIcon;
-import javax.swing.InputMap;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
+import javax.swing.text.JTextComponent;
 
-import java.awt.event.KeyAdapter;
-import java.awt.Cursor;;
+import uw.cs.watform.forml.forml.Attribute;
+import uw.cs.watform.forml.forml.AttributeType;
+import uw.cs.watform.forml.forml.Cardinality;
+import uw.cs.watform.forml.forml.Concept;
+import uw.cs.watform.forml.forml.ExprRef;
+import uw.cs.watform.forml.forml.FormlFactory;
+import uw.cs.watform.forml.forml.Message;
+import uw.cs.watform.forml.forml.Multiplicity;
+import uw.cs.watform.forml.forml.ReferenceType;
+import uw.cs.watform.forml.forml.impl.BoolTypeImpl;
+import uw.cs.watform.forml.forml.impl.IntTypeImpl;
+import uw.cs.watform.forml.forml.impl.ReferenceTypeImpl;
+import uw.cs.watform.forml.forml.impl.StringTypeImpl;
+import uw.cs.watform.forml.services.rename.NameUniquenessVerifier;
+import uw.cs.watform.forml.services.utilities.ModelUtils;
+import uw.cs.watform.forml.services.utilities.ModelUtils2;;
 
 public class FrmEditFeatureMessage extends JDialog {
 

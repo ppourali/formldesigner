@@ -24,27 +24,22 @@ import org.eclipse.swt.events.ModifyEvent;
 import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import uw.cs.watform.forml.extensions.LblSaveStatusEditorLifecycleManager;
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.ExprRef;
 import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.Function;
-import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.InputList;
 import uw.cs.watform.forml.forml.OutputList;
 import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.forml.WCAList;
 import uw.cs.watform.forml.services.GUI.TransitionDialogBox.NewElementCreation.CreateElementDialog;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
-import org.eclipse.swt.widgets.Label;
 
 public class CustomSearchBarForFeatureNode extends Composite {
 

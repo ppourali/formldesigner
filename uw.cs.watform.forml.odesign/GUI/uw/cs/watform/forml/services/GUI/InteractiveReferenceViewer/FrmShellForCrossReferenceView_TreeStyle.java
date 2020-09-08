@@ -7,9 +7,6 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature.Setting;
 import org.eclipse.swt.SWT;
@@ -31,26 +28,18 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
-import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import com.sun.webkit.graphics.Ref;
-
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Function;
 import uw.cs.watform.forml.forml.Input;
-import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.Roleable;
 import uw.cs.watform.forml.services.GUI.SeachEverything.CustomCompositeSearchForEveryThing;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
-import uw.cs.watform.forml.services.virtualresource.CustomVirtualResource;
 import uw.cs.watform.forml.viewpoint.xtext.support.AbstractShellContainer;
-import org.eclipse.swt.layout.RowLayout;
-import org.eclipse.swt.layout.RowData;
-import org.eclipse.wb.swt.ResourceManager;
 
 public class FrmShellForCrossReferenceView_TreeStyle extends AbstractShellContainer {
 	private java.awt.event.KeyListener suggestKeyListener;

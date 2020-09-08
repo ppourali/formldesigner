@@ -13,7 +13,6 @@ package uw.cs.watform.forml.services.utilities;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
@@ -25,7 +24,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EStructuralFeature.Setting;
-import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.xtext.EcoreUtil2;
 
@@ -43,7 +41,6 @@ import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FeatureModule;
 import uw.cs.watform.forml.forml.FeatureNode;
 import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.FormlPackage;
 import uw.cs.watform.forml.forml.Fragment;
 import uw.cs.watform.forml.forml.FragmentType;
 import uw.cs.watform.forml.forml.Function;

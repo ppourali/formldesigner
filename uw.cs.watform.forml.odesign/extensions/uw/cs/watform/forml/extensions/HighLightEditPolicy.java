@@ -1,11 +1,6 @@
 package uw.cs.watform.forml.extensions;
 
-import javax.swing.JOptionPane;
-
-import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.editpolicies.SelectionEditPolicy;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
 
 public class HighLightEditPolicy extends SelectionEditPolicy  {
 

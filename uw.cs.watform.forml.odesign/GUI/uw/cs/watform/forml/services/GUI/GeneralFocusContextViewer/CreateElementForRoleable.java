@@ -2,11 +2,8 @@ package uw.cs.watform.forml.services.GUI.GeneralFocusContextViewer;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.util.Collection;
 
 import org.eclipse.emf.common.command.CommandStack;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EStructuralFeature.Setting;
 import org.eclipse.emf.transaction.RecordingCommand;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.emf.transaction.util.TransactionUtil;
@@ -15,7 +12,6 @@ import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Dialog;
@@ -28,11 +24,8 @@ import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.services.GUI.InteractiveReferenceViewer.FrmShellForCrossReferenceView_TreeStyle;
 import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class CreateElementForRoleable extends Dialog {
 

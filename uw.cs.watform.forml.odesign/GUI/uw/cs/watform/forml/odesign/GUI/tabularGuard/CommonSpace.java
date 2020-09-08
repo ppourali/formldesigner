@@ -1,32 +1,21 @@
 package uw.cs.watform.forml.odesign.GUI.tabularGuard;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Deque;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
-import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.custom.CCombo;
 import org.eclipse.swt.graphics.Color;
-import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 
 import uw.cs.watform.forml.forml.Concept;
 import uw.cs.watform.forml.forml.ExprRef;
-import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.Transition;
 import uw.cs.watform.forml.services.GUI.TransitionDialogBox.FrmShellForSetGuardGraphicallyDialog;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
-import uw.cs.watform.forml.services.utilities.XTextUtils;
 
 public class CommonSpace {
 	private Shell shell;

@@ -3,7 +3,6 @@ package uw.cs.watform.forml.services.GUI.TransitionDialogBox;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.sirius.viewpoint.description.tool.ModelOperation;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
@@ -17,13 +16,9 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import uw.cs.watform.forml.forml.Aggregation;
-import uw.cs.watform.forml.forml.Association;
-import uw.cs.watform.forml.forml.Composition;
 import uw.cs.watform.forml.forml.Roleable;
 import uw.cs.watform.forml.services.GUI.TransitionDialogBox.NewElementCreation.NewElementsCreationHelperClass;
 import uw.cs.watform.forml.services.utilities.AssociationUtils;
-import uw.cs.watform.forml.services.utilities.ModelOperations2;
 
 public class CustomListForClasses extends Composite {
 

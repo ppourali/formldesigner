@@ -10,23 +10,10 @@
  *******************************************************************************/
 package uw.cs.watform.forml.extensions.services;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EStructuralFeature.Setting;
-import org.eclipse.sirius.business.api.session.Session;
-import org.eclipse.sirius.business.api.session.SessionManager;
 
 import uw.cs.watform.forml.forml.Association;
 import uw.cs.watform.forml.forml.Decl;
-import uw.cs.watform.forml.forml.Role;
 
 /**
  * A switch that handle the label edition for each UML types.

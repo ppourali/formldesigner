@@ -2,7 +2,6 @@ package uw.cs.watform.forml.services.GUI;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.UIManager;
@@ -10,14 +9,10 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.geometry.Rectangle;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPartViewer;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramRootEditPart;
-import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.sirius.diagram.business.api.query.EObjectQuery;
 import org.eclipse.sirius.diagram.ui.internal.edit.parts.DEdgeEditPart;
-import org.eclipse.sirius.viewpoint.ViewpointPackage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.ScrolledComposite;
 import org.eclipse.swt.events.DisposeEvent;
@@ -26,8 +21,6 @@ import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.events.MouseListener;
-import org.eclipse.swt.events.ShellEvent;
-import org.eclipse.swt.events.ShellListener;
 import org.eclipse.swt.events.TraverseEvent;
 import org.eclipse.swt.events.TraverseListener;
 import org.eclipse.swt.graphics.Point;
@@ -43,21 +36,13 @@ import org.eclipse.wb.swt.SWTResourceManager;
 //import com.apple.dnssd.TXTRecord;
 
 import uw.cs.watform.forml.forml.Attribute;
-import uw.cs.watform.forml.forml.Concept;
 import uw.cs.watform.forml.forml.ExprRef;
 import uw.cs.watform.forml.forml.Feature;
-import uw.cs.watform.forml.forml.FeatureNode;
 import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.Input;
 import uw.cs.watform.forml.forml.Message;
 import uw.cs.watform.forml.forml.Output;
-import uw.cs.watform.forml.forml.RefMessage;
-import uw.cs.watform.forml.forml.Transition;
 import uw.cs.watform.forml.services.GUI.CustomControls.CustomSearchTextForWCA;
-import uw.cs.watform.forml.services.GUI.CustomControls.CustomSearchTextForWCE;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
-import uw.cs.watform.forml.services.utilities.RepresentationsUtils;
 import uw.cs.watform.forml.services.utilities.WorldModelCommonServices;
 import uw.cs.watform.forml.viewpoint.xtext.support.AbstractShellContainer;
 

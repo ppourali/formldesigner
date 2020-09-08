@@ -25,7 +25,7 @@ public class FrmShellForSetGuardGraphicallyDialog extends AbstractShellContainer
 	public final FormToolkit formToolkit = new FormToolkit(Display.getDefault());
 
 	final FrmShellForSetGuardGraphicallyDialog shellContainer = this;
-	//private Shell shell;
+	//private Shell shell=new Shell();
 	private CustomControlExpandBarForTransitionParts composite_TransitionPartsHolder;
 	private CustomControlFeaturePreview composite_FeaturesPreviewHolder;
 	private CustomControlAcceptButton btnSaveAndExit;
@@ -71,7 +71,7 @@ public class FrmShellForSetGuardGraphicallyDialog extends AbstractShellContainer
 
 		// addShellListenerForAutoDisposeOnDeactive();
 
-		getShell().setSize(790, 456);
+		getShell().setSize(810, 456);
 
 		getShell().setText("Transition Label");
 
@@ -105,7 +105,7 @@ public class FrmShellForSetGuardGraphicallyDialog extends AbstractShellContainer
 	private void createFeaturesListSection() {
 		// shell.setLayout(null);
 		composite_FeaturesPreviewHolder = new CustomControlFeaturePreview(getShell());
-		composite_FeaturesPreviewHolder.setBounds(5, 50, 398, 384);
+		composite_FeaturesPreviewHolder.setBounds(5, 50, 415, 384);
 		composite_FeaturesPreviewHolder.setBackground(SWTResourceManager.getColor(240, 255, 255));
 		CommonSpaceForContextualUI.setFeaturesListDialog(composite_FeaturesPreviewHolder);
 		// composite_FeaturesPreviewHolder.setLayout(null);

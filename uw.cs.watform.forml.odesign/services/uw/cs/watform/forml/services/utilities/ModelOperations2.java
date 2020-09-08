@@ -21,7 +21,6 @@ import uw.cs.watform.forml.forml.Association;
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.AttributeType;
 import uw.cs.watform.forml.forml.Component;
-import uw.cs.watform.forml.forml.Concept;
 import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.EnumConst;
 import uw.cs.watform.forml.forml.Enumeration;

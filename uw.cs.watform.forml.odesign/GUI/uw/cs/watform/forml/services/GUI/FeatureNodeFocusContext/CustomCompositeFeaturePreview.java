@@ -1,22 +1,15 @@
 package uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.transaction.RecordingCommand;
-import org.eclipse.emf.transaction.TransactionalEditingDomain;
-import org.eclipse.emf.transaction.util.TransactionUtil;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.custom.SashForm;
 import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.FocusListener;
-import org.eclipse.swt.events.KeyEvent;
-import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.FillLayout;
@@ -30,40 +23,22 @@ import org.eclipse.swt.widgets.ExpandItem;
 import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.wb.swt.SWTResourceManager;
-import org.eclipse.xtext.resource.SaveOptions;
 
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.Feature;
-import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.forml.FeatureNode;
-import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Function;
-import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.Input;
-import uw.cs.watform.forml.forml.Node;
 import uw.cs.watform.forml.forml.Output;
 import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.forml.WCAList;
-import uw.cs.watform.forml.forml.WorldModel;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.NewElementCreation.CustomCompositeCreateNewElement;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.NewElementCreation.NewElementsCreationHelperClass;
 import uw.cs.watform.forml.services.general.JS_FeatureClassServices;
 import uw.cs.watform.forml.services.general.JS_MessageServices;
 import uw.cs.watform.forml.services.utilities.AssociationUtils;
-import uw.cs.watform.forml.services.utilities.ModelOperations;
-import uw.cs.watform.forml.services.utilities.ModelOperations2;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.layout.RowLayout;
-import org.eclipse.swt.events.ModifyListener;
-import org.eclipse.swt.events.ModifyEvent;
 
 public class CustomCompositeFeaturePreview extends SashForm {
 

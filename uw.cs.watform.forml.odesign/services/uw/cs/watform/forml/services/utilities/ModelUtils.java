@@ -10,65 +10,31 @@
  *******************************************************************************/
 package uw.cs.watform.forml.services.utilities;
 
-import java.awt.Container;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.jface.operation.IRunnableWithProgress;
-import org.eclipse.sirius.business.api.dialect.DialectManager;
-import org.eclipse.sirius.business.api.session.Session;
-import org.eclipse.sirius.business.api.session.SessionManager;
-import org.eclipse.sirius.diagram.DSemanticDiagram;
-import org.eclipse.sirius.viewpoint.DRepresentation;
-import org.eclipse.sirius.viewpoint.DSemanticDecorator;
-import org.eclipse.sirius.viewpoint.description.RepresentationDescription;
-import org.eclipse.sirius.ui.business.api.dialect.DialectUIManager;
-import org.eclipse.sirius.ui.business.internal.dialect.DialectUIManagerImpl;
-import org.eclipse.sirius.viewpoint.DRepresentation;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.ide.IDE;
-import org.eclipse.ui.internal.Model;
-import org.eclipse.ui.texteditor.AbstractTextEditor;
 import org.eclipse.xtext.EcoreUtil2;
-import org.eclipse.xtext.nodemodel.ICompositeNode;
-import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
-import org.eclipse.xtext.resource.IResourceFactory;
-import org.eclipse.xtext.resource.SaveOptions;
 import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.serializer.impl.Serializer;
-import org.eclipse.xtext.ui.editor.XtextSourceViewer;
 
-import com.google.common.base.Function;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Ordering;
-import com.google.inject.Injector;
-
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.System;
-import uw.cs.watform.forml.forml.impl.*;
-import uw.cs.watform.forml.services.GUI.CustomMessageDialog;
-import uw.cs.watform.forml.services.rename.NameUniquenessVerifier;
-import uw.cs.watform.forml.ui.internal.FormlActivator;
-import sun.java2d.cmm.Profile;
-import sun.security.acl.WorldGroupImpl;
+import uw.cs.watform.forml.forml.Action;
+import uw.cs.watform.forml.forml.Concept;
+import uw.cs.watform.forml.forml.Entity;
+import uw.cs.watform.forml.forml.Feature;
+import uw.cs.watform.forml.forml.FeatureModule;
+import uw.cs.watform.forml.forml.FormlFactory;
+import uw.cs.watform.forml.forml.Input;
+import uw.cs.watform.forml.forml.Message;
+import uw.cs.watform.forml.forml.Output;
+import uw.cs.watform.forml.forml.ReferenceType;
+import uw.cs.watform.forml.forml.Roleable;
+import uw.cs.watform.forml.forml.SPL;
+import uw.cs.watform.forml.forml.State;
+import uw.cs.watform.forml.forml.Transition;
+import uw.cs.watform.forml.forml.UndefinedType;
+import uw.cs.watform.forml.forml.WCE;
+import uw.cs.watform.forml.forml.atomic;
 
 @SuppressWarnings("unchecked")
 public class ModelUtils extends AbstractModelUtils {

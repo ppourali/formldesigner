@@ -34,7 +34,6 @@ import org.eclipse.xtext.ui.editor.embedded.ActivationCodeTrigger;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorActions;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorMessages;
 import org.eclipse.xtext.ui.editor.embedded.TextViewerOperationAction;
-import org.eclipse.core.expressions.Expression;
 
 import com.google.common.collect.Lists;
 

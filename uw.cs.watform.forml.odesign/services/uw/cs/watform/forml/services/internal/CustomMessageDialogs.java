@@ -1,13 +1,7 @@
 package uw.cs.watform.forml.services.internal;
 
-import javax.swing.JOptionPane;
-
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.widgets.Shell;
-
-import uw.cs.watform.forml.forml.Message;
-import uw.cs.watform.forml.services.GUI.CustomMessageDialog;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 /**
  * All the message dialogs are declared in this class.

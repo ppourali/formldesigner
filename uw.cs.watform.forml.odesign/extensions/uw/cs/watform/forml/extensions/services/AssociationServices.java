@@ -20,7 +20,6 @@ import org.eclipse.sirius.diagram.EdgeTarget;
 import org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListSpec;
 import org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeSpec;
 
-
 import com.google.common.collect.Lists;
 
 import uw.cs.watform.forml.forml.Association;

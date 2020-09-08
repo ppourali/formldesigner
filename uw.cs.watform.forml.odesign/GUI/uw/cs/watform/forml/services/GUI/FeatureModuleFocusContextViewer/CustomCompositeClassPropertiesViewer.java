@@ -1,8 +1,21 @@
 package uw.cs.watform.forml.services.GUI.FeatureModuleFocusContextViewer;
 
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.FocusEvent;
+import org.eclipse.swt.events.FocusListener;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.SelectionListener;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.ExpandBar;
+import org.eclipse.swt.widgets.ExpandItem;
+import org.eclipse.swt.widgets.Text;
+import org.eclipse.wb.swt.SWTResourceManager;
 
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Entity;
@@ -14,35 +27,9 @@ import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.Roleable;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FrmFPC_FeatureNode;
 import uw.cs.watform.forml.services.GUI.GeneralFocusContextViewer.CreateElementForRoleable;
-import uw.cs.watform.forml.services.GUI.TransitionDialogBox.CommonSpaceForContextualUI;
-import uw.cs.watform.forml.services.GUI.TransitionDialogBox.EmbeddedEditorGenerator;
-import uw.cs.watform.forml.services.GUI.TransitionDialogBox.NewElementCreation.CreateElementDialog;
 import uw.cs.watform.forml.services.general.JS_FeatureClassServices;
 import uw.cs.watform.forml.services.general.JS_MessageServices;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
-
-import org.eclipse.emf.common.util.BasicEList;
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.swt.SWT;
-import org.eclipse.swt.layout.FillLayout;
-import org.eclipse.swt.layout.FormLayout;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.layout.FormData;
-import org.eclipse.swt.layout.FormAttachment;
-import org.eclipse.swt.widgets.ExpandBar;
-import org.eclipse.swt.widgets.ExpandItem;
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.layout.RowData;
-import org.eclipse.swt.layout.RowLayout;
-import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.custom.SashForm;
-import org.eclipse.swt.custom.ScrolledComposite;
-import org.eclipse.swt.events.FocusEvent;
-import org.eclipse.swt.events.FocusListener;
-import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
-import org.eclipse.wb.swt.SWTResourceManager;
 
 public class CustomCompositeClassPropertiesViewer extends Composite {
 

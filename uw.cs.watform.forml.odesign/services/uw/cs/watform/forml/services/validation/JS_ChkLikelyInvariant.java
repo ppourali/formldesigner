@@ -1,8 +1,5 @@
 package uw.cs.watform.forml.services.validation;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -10,7 +7,6 @@ import java.util.List;
 import org.eclipse.emf.ecore.EObject;
 
 import uw.cs.watform.forml.forml.Feature;
-import uw.cs.watform.forml.forml.Message;
 import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 

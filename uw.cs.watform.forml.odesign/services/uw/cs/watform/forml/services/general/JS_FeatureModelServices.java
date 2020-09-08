@@ -3,7 +3,6 @@ package uw.cs.watform.forml.services.general;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.sirius.diagram.DNode;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.xtext.EcoreUtil2;
 
 import uw.cs.watform.forml.forml.AndNode;
 import uw.cs.watform.forml.forml.Cardinality;
@@ -25,8 +24,6 @@ import uw.cs.watform.forml.forml.impl.WorldModelImpl;
 import uw.cs.watform.forml.services.GUI.FrmSetCardinality;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FPC_SingletonData;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FrmFPC_FeatureNode;
-import uw.cs.watform.forml.services.GUI.TransitionDialogBox.CommonSpaceForContextualUI;
-import uw.cs.watform.forml.services.GUI.TransitionDialogBox.FrmShellForSetGuardGraphicallyDialog;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;

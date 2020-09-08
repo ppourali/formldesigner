@@ -3,7 +3,6 @@ package FPC;
 import FPC_FeatureNode.CustomCompositeFeaturePreview;
 import FPC_FeatureNode.FrmFPC_FeatureNode;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.services.GUI.TransitionDialogBox.CustomControlFeaturePreview;
 
 public class FPC_SingletonData {
 	private static Roleable CurrentRoleable;

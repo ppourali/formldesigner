@@ -95,7 +95,7 @@ public class CustomControlFeaturePreview extends AbstractCustomFeaturesPreview {
 		chkShowUsedClasses = new Button(compositeClasses, SWT.CHECK);
 		chkShowUsedClasses.setFont(SWTResourceManager.getFont("Segoe UI", 8, SWT.NORMAL));
 		chkShowUsedClasses.setLayoutData(new GridData(SWT.FILL, SWT.FILL, false, false, 1, 1));
-		chkShowUsedClasses.setText("Hide Unused Classes");
+		chkShowUsedClasses.setText("Show Only Used Classes");
 		chkShowUsedClasses.setSelection(true);
 
 		CLabel lblSelfClasses = new CLabel(compositeClasses, SWT.NONE);

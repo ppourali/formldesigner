@@ -1,26 +1,20 @@
 package uw.cs.watform.forml.services.widgets;
 
-import java.util.List;
-
 import org.eclipse.emf.common.command.CommandStack;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.transaction.RecordingCommand;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.emf.transaction.util.TransactionUtil;
-import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.xtext.EcoreUtil2;
 
 import uw.cs.watform.forml.forml.Action;
-import uw.cs.watform.forml.forml.AndNode;
 import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.forml.FeatureNode;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Input;
 import uw.cs.watform.forml.forml.Message;
-import uw.cs.watform.forml.forml.OrNode;
 import uw.cs.watform.forml.forml.Output;
 import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.Roleable;
@@ -30,13 +24,9 @@ import uw.cs.watform.forml.forml.WCA;
 import uw.cs.watform.forml.forml.WCAList;
 import uw.cs.watform.forml.forml.WCE;
 import uw.cs.watform.forml.forml.WorldModel;
-import uw.cs.watform.forml.forml.XORNode;
 import uw.cs.watform.forml.services.GUI.FrmCustomActionSelectionWizard;
-import uw.cs.watform.forml.services.GUI.FrmCustomFeatureSelectionWizard;
 import uw.cs.watform.forml.services.GUI.FrmCustomTriggeringEventSelectionWizard;
-import uw.cs.watform.forml.services.internal.MessageDialogs;
 import uw.cs.watform.forml.services.utilities.ModelDeleteOperations;
-import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 /**

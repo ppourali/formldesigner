@@ -1,19 +1,6 @@
 package uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext;
 
-import org.eclipse.jface.viewers.StructuredSelection;
-import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.swt.widgets.Shell;
-
-import uw.cs.watform.forml.forml.Feature;
-import uw.cs.watform.forml.forml.FeatureNode;
-import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.forml.WCAList;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class FPC_SingletonData {
 	private static Roleable CurrentRoleable;

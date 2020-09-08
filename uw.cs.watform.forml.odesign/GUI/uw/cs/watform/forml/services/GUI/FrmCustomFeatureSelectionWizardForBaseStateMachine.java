@@ -3,7 +3,6 @@ package uw.cs.watform.forml.services.GUI;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.Collection;
-import java.util.Collections;
 
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -25,34 +24,25 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import uw.cs.watform.forml.forml.AndNode;
 import uw.cs.watform.forml.forml.BehaviourModel;
 import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.forml.FeatureNode;
-import uw.cs.watform.forml.forml.Node;
-import uw.cs.watform.forml.forml.OrNode;
-import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.SPL;
-import uw.cs.watform.forml.forml.XORNode;
 import uw.cs.watform.forml.forml.provider.FormlItemProviderAdapterFactory;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.CustomCompositeFeatureModuleSnapShotHolder;
-import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FPC_SingletonData;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
 import uw.cs.watform.forml.services.utilities.RepresentationsUtils;
 import uw.cs.watform.forml.viewpoint.xtext.support.AbstractShellContainer;
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Button;
 
 public class FrmCustomFeatureSelectionWizardForBaseStateMachine extends AbstractShellContainer {
 

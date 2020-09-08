@@ -1,10 +1,5 @@
 package uw.cs.watform.forml.extensions;
 
-import org.eclipse.gmf.runtime.common.core.service.IOperation;
-import org.eclipse.gmf.runtime.common.core.service.IProviderChangeListener;
-import org.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorProvider;
-import org.eclipse.gmf.runtime.diagram.ui.services.decorator.IDecoratorTarget;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,7 +16,6 @@ import org.eclipse.emf.transaction.util.TransactionUtil;
 import org.eclipse.emf.workspace.util.WorkspaceSynchronizer;
 import org.eclipse.gef.EditDomain;
 import org.eclipse.gef.EditPart;
-import org.eclipse.gef.NodeEditPart;
 import org.eclipse.gef.editparts.AbstractConnectionEditPart;
 import org.eclipse.gmf.runtime.common.core.service.AbstractProvider;
 import org.eclipse.gmf.runtime.common.core.service.IOperation;

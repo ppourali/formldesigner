@@ -1,7 +1,6 @@
 package uw.cs.watform.forml.services.GUI.TransitionDialogBox.NewElementCreation;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.FocusListener;
 import org.eclipse.swt.events.KeyEvent;
@@ -11,6 +10,7 @@ import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
@@ -22,8 +22,6 @@ import uw.cs.watform.forml.forml.Input;
 import uw.cs.watform.forml.forml.Output;
 import uw.cs.watform.forml.services.GUI.TransitionDialogBox.CustomControlFeaturePreview;
 import uw.cs.watform.forml.services.GUI.TransitionDialogBox.FrmShellForSetGuardGraphicallyDialog;
-import org.eclipse.swt.layout.FillLayout;
-import org.eclipse.swt.layout.GridLayout;
 
 public class CustomCompositeCreateNewElement extends Composite {
 

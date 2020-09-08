@@ -9,25 +9,18 @@ import org.eclipse.eef.common.ui.api.IEEFFormContainer;
 import org.eclipse.eef.core.api.EditingContextAdapter;
 import org.eclipse.eef.core.api.controllers.IEEFWidgetController;
 import org.eclipse.eef.ide.ui.api.widgets.AbstractEEFWidgetLifecycleManager;
-import org.eclipse.eef.ide.ui.api.widgets.IEEFLifecycleManager;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.edit.provider.ComposedAdapterFactory;
-import org.eclipse.jface.text.source.SourceViewer;
 import org.eclipse.sirius.common.interpreter.api.IInterpreter;
 import org.eclipse.sirius.common.interpreter.api.IVariableManager;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
 
 import uw.cs.watform.forml.extensions.TransitionEditorController;
 import uw.cs.watform.forml.forml.FeatureModule;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.services.GUI.FeatureModuleFocusContextViewer.CustomCompositeForClassViewer;
 import uw.cs.watform.forml.services.GUI.FeatureModuleFocusContextViewer.CustomMultiCompositeForClassViewer;
-import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.CustomCompositeFeatureModuleSnapShotHolder;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class ClassPreviewerForFeatureModuleLifecycleManager extends AbstractEEFWidgetLifecycleManager {

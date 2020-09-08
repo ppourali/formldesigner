@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.emf.common.command.CommandStack;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.transaction.RecordingCommand;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
@@ -12,7 +11,6 @@ import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPartViewer;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart;
 import org.eclipse.gmf.runtime.notation.View;
-import org.eclipse.sirius.diagram.DNode;
 import org.eclipse.sirius.diagram.ui.edit.api.part.AbstractDiagramContainerEditPart;
 import org.eclipse.sirius.diagram.ui.internal.edit.parts.DEdgeEditPart;
 import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNodeContainer2EditPart;
@@ -22,23 +20,15 @@ import org.eclipse.swt.widgets.Display;
 
 import uw.cs.watform.forml.forml.Component;
 import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.forml.FeatureNode;
-import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Region;
-import uw.cs.watform.forml.forml.Roleable;
 import uw.cs.watform.forml.forml.State;
 import uw.cs.watform.forml.forml.StateMachine;
 import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FPC_SingletonData;
-import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FrmFPC_FeatureNode;
 import uw.cs.watform.forml.services.GUI.FragmentStateFocusContext.FrmFPC_FragmentState;
 import uw.cs.watform.forml.services.general.JS_TransitionLabelServices;
 import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
-import uw.cs.watform.forml.services.virtualresource.CustomVirtualResource;
-import uw.cs.watform.forml.viewpoint.xtext.support.CreateEmbeddedEditors;
 
 /**
  * 

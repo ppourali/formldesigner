@@ -156,14 +156,10 @@ package uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.jface.viewers.TreeViewer;
-import org.eclipse.jface.viewers.Viewer;
-import org.eclipse.jface.viewers.ViewerDropAdapter;
 import org.eclipse.swt.dnd.DropTargetEvent;
-import org.eclipse.swt.dnd.TransferData;
 import org.eclipse.swt.widgets.TreeItem;
 
 import uw.cs.watform.forml.forml.AndNode;
-import uw.cs.watform.forml.forml.FeatureNode;
 import uw.cs.watform.forml.forml.Node;
 import uw.cs.watform.forml.forml.OrNode;
 import uw.cs.watform.forml.forml.XORNode;

@@ -3,14 +3,12 @@ package uw.cs.watform.forml.services.GUI.InteractiveReferenceViewer;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EStructuralFeature.Setting;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.events.DisposeEvent;
@@ -36,15 +34,6 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import com.sun.webkit.graphics.Ref;
-
-import uw.cs.watform.forml.forml.Attribute;
-import uw.cs.watform.forml.forml.Function;
-import uw.cs.watform.forml.forml.Guard;
-import uw.cs.watform.forml.forml.Input;
-import uw.cs.watform.forml.forml.RefMessage;
-import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
 import uw.cs.watform.forml.viewpoint.xtext.support.AbstractShellContainer;
 
 public class FrmShellForGuardCrossReferenceView_TreeStyleNOTUSED extends AbstractShellContainer {

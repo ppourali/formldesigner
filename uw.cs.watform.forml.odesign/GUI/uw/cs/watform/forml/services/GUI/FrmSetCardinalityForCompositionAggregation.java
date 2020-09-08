@@ -33,10 +33,8 @@ import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Cardinality;
 import uw.cs.watform.forml.forml.Composition;
 import uw.cs.watform.forml.forml.Concept;
-import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Multiplicity;
-import uw.cs.watform.forml.services.rename.JS_Action_Rename_On_FeatureClass;
 import uw.cs.watform.forml.services.rename.NameUniquenessVerifier;
 
 public class FrmSetCardinalityForCompositionAggregation extends JDialog {

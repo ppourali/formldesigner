@@ -10,7 +10,6 @@ import uw.cs.watform.forml.forml.State;
 import uw.cs.watform.forml.forml.StateMachine;
 import uw.cs.watform.forml.forml.Transition;
 import uw.cs.watform.forml.services.utilities.ModelDeleteOperations;
-import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 /**

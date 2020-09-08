@@ -1,6 +1,5 @@
 package uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext;
 
-import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.dnd.DND;
 import org.eclipse.swt.dnd.DragSource;
 import org.eclipse.swt.dnd.DragSourceEvent;

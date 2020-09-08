@@ -2,7 +2,6 @@ package uw.cs.watform.forml.services.GUI.TransitionDialogBox.NewElementCreation;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
-import java.util.ArrayList;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyEvent;
@@ -10,8 +9,6 @@ import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
-import org.eclipse.swt.events.TraverseEvent;
-import org.eclipse.swt.events.TraverseListener;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Dialog;
@@ -22,17 +19,12 @@ import org.eclipse.swt.widgets.Text;
 
 import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.Feature;
-import uw.cs.watform.forml.forml.FeatureModule;
 import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.forml.WCAList;
 import uw.cs.watform.forml.services.GUI.TransitionDialogBox.CommonSpaceForContextualUI;
 import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class CreateClassElementDialog extends Dialog {
 

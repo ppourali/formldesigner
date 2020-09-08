@@ -1,26 +1,19 @@
 package uw.cs.watform.forml.services.utilities;
 
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.KeyStroke;
-import javax.swing.ListModel;
-
 import java.awt.BorderLayout;
-import javax.swing.JList;
-import javax.swing.ListSelectionModel;
-
-import org.eclipse.sirius.viewpoint.description.tool.PopupMenu;
-
-import javax.swing.AbstractAction;
-import javax.swing.AbstractListModel;
-import javax.swing.DefaultListModel;
-import javax.swing.JComponent;
-
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.awt.Color;
+
+import javax.swing.AbstractAction;
+import javax.swing.DefaultListModel;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
+import javax.swing.KeyStroke;
+import javax.swing.ListSelectionModel;
 
 public class CustomContentAssistant extends JDialog   {
 	

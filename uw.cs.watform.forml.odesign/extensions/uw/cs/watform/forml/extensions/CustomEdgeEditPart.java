@@ -1,17 +1,9 @@
 package uw.cs.watform.forml.extensions;
 
 import org.eclipse.draw2d.Connection;
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.gef.DragTracker;
-import org.eclipse.gef.EditPart;
-import org.eclipse.gef.Request;
-import org.eclipse.gef.requests.DirectEditRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionEditPart;
-import org.eclipse.gmf.runtime.gef.ui.internal.tools.SelectConnectionEditPartTracker;
-import org.eclipse.gmf.runtime.notation.NotationPackage;
 import org.eclipse.gmf.runtime.notation.View;
 
-import uw.cs.watform.forml.extensions.customStyles.TransitionEditPart;
 import uw.cs.watform.forml.extensions.customStyles.TransitionFigure;
 
 /**

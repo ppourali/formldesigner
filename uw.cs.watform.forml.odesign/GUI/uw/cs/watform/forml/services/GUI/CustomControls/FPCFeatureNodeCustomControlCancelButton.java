@@ -1,17 +1,14 @@
 package uw.cs.watform.forml.services.GUI.CustomControls;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import uw.cs.watform.forml.odesign.GUI.tabularGuard.CommonSpace;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FPC_SingletonData;
-import uw.cs.watform.forml.services.GUI.TransitionDialogBox.CommonSpaceForContextualUI;
 import uw.cs.watform.forml.services.GUI.TransitionDialogBox.FrmShellForSetGuardGraphicallyDialog;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
 
 public class FPCFeatureNodeCustomControlCancelButton extends Composite {
 

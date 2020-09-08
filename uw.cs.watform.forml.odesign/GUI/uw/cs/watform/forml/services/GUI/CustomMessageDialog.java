@@ -5,10 +5,6 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.handlers.HandlerUtil;
-
 public class CustomMessageDialog {
 
 	public static int ShowQuestionDialog(String MessageText, int type, String[] buttons, int defaultButton) {

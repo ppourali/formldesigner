@@ -1,34 +1,6 @@
 package uw.cs.watform.forml.services.utilities;
 
-import javax.swing.DefaultListModel;
 import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.JTable;
-import javax.swing.ListModel;
-import javax.swing.ListSelectionModel;
-
-import org.eclipse.emf.ecore.EObject;
-
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.impl.*;
-
-
-import javax.swing.JScrollPane;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
-import javax.swing.JList;
-import javax.swing.JMenuItem;
-import javax.swing.AbstractListModel;
-import java.awt.Color;
-import java.awt.Window.Type;
-import java.awt.Frame;
-import java.awt.Point;
-import java.awt.ComponentOrientation;
-import java.awt.Dialog.ModalityType;
 
 public class ContentAssistantFrame extends JDialog {
 

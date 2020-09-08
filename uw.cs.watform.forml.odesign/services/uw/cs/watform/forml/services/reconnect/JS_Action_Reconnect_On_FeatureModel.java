@@ -1,12 +1,10 @@
 package uw.cs.watform.forml.services.reconnect;
 
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.EcoreUtil2;
 
 import uw.cs.watform.forml.forml.AndNode;
 import uw.cs.watform.forml.forml.FeatureNode;
-import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Node;
 import uw.cs.watform.forml.forml.OrNode;
 import uw.cs.watform.forml.forml.SPL;

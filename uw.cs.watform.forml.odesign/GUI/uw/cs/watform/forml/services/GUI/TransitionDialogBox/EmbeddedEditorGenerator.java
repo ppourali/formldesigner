@@ -1,7 +1,5 @@
 package uw.cs.watform.forml.services.GUI.TransitionDialogBox;
 
-import javax.swing.JOptionPane;
-
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -19,8 +17,6 @@ import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorModelAccess;
 
 import uw.cs.watform.forml.extensions.EmbeddedLinkEditor.CustomEmbeddedEditorResourceProvider;
-import uw.cs.watform.forml.forml.Feature;
-import uw.cs.watform.forml.forml.FeatureNode;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.Transition;

@@ -7,23 +7,14 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.TraverseEvent;
-import org.eclipse.swt.events.TraverseListener;
-import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.wb.swt.SWTResourceManager;
 
 import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.services.GUI.CustomControls.CustomControlAcceptButton;
-import uw.cs.watform.forml.services.GUI.CustomControls.CustomControlCancelButton;
-import uw.cs.watform.forml.services.GUI.CustomControls.FPCFeatureNodeCustomControlAcceptButton;
-import uw.cs.watform.forml.services.GUI.CustomControls.FPCFeatureNodeCustomControlCancelButton;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.viewpoint.xtext.support.AbstractShellContainer;
 
 public class FrmFPC_FragmentState extends AbstractShellContainer {

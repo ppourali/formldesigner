@@ -1,44 +1,38 @@
 package uw.cs.watform.forml.services.GUI.TransitionDialogBox;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
-import org.eclipse.sirius.viewpoint.DRepresentation;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.custom.CLabel;
+import org.eclipse.swt.events.ModifyEvent;
+import org.eclipse.swt.events.ModifyListener;
+import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.layout.RowData;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.Text;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Concept;
 import uw.cs.watform.forml.forml.FeatureModule;
 import uw.cs.watform.forml.forml.Fragment;
 import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.StateMachine;
+import uw.cs.watform.forml.forml.Transition;
 import uw.cs.watform.forml.forml.Trigger;
 import uw.cs.watform.forml.forml.WCAList;
 import uw.cs.watform.forml.services.general.JS_TransitionLabelServices;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
-import uw.cs.watform.forml.services.utilities.RepresentationsUtils;
-
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.layout.RowLayout;
-import org.eclipse.swt.layout.RowData;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.custom.CLabel;
-import org.eclipse.swt.widgets.Combo;
-import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.events.ModifyListener;
-import org.eclipse.swt.events.ModifyEvent;
 
 public class CustomControlExpandBarForTransitionParts extends Composite {
 	private int[] table_Actions_widths = { 75, 150 };

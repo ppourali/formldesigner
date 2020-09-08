@@ -18,12 +18,10 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 
 import uw.cs.watform.forml.extensions.TransitionEditorController;
-import uw.cs.watform.forml.forml.FeatureModule;
 import uw.cs.watform.forml.forml.Roleable;
 import uw.cs.watform.forml.forml.State;
 import uw.cs.watform.forml.services.GUI.FeatureModuleFocusContextViewer.CustomMultiCompositeForClassViewer;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class ClassPreviewerForStateLifecycleManager extends AbstractEEFWidgetLifecycleManager {
 

@@ -2,13 +2,6 @@ package uw.cs.watform.forml.services.handlers;
 
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPartListener;
-import org.eclipse.gef.Request;
-import org.eclipse.gef.RequestConstants;
-import org.eclipse.gef.commands.Command;
-import org.eclipse.gef.requests.ChangeBoundsRequest;
-import org.eclipse.jface.viewers.TextCellEditor;
-import org.eclipse.swt.custom.StyledText;
-import org.eclipse.swt.widgets.Text;
 
 /**
  * This is a customized edit part listener for adding and removing child edit

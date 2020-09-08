@@ -1,15 +1,8 @@
 package uw.cs.watform.forml.extensions.EmbeddedLinkEditor;
 
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 
-import org.eclipse.eef.EEFLabelDescription;
-import org.eclipse.eef.EEFLabelStyle;
-import org.eclipse.emf.common.notify.Adapter;
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.BasicMonitor;
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.compare.Comparison;
 import org.eclipse.emf.compare.EMFCompare;
 import org.eclipse.emf.compare.merge.BatchMerger;
@@ -18,11 +11,7 @@ import org.eclipse.emf.compare.merge.IMerger;
 import org.eclipse.emf.compare.rcp.EMFCompareRCPPlugin;
 import org.eclipse.emf.compare.scope.DefaultComparisonScope;
 import org.eclipse.emf.compare.scope.IComparisonScope;
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EOperation;
-import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.transaction.RecordingCommand;
@@ -30,13 +19,9 @@ import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.emf.transaction.util.TransactionUtil;
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.custom.VerifyKeyListener;
-import org.eclipse.swt.events.FocusEvent;
-import org.eclipse.swt.events.FocusListener;
 import org.eclipse.swt.events.VerifyEvent;
-import org.eclipse.wb.swt.SWTResourceManager;
 import org.eclipse.xtext.nodemodel.ICompositeNode;
 import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
 import org.eclipse.xtext.parser.IParseResult;
@@ -48,9 +33,6 @@ import com.google.inject.Injector;
 
 import uw.cs.watform.forml.extensions.PropertiesViewHelper;
 import uw.cs.watform.forml.forml.Action;
-import uw.cs.watform.forml.forml.Guard;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.viewpoint.xtext.support.Activator;
 
 public class AbstractEditorHelper {

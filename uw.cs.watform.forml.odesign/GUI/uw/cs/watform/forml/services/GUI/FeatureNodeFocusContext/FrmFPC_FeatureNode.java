@@ -15,8 +15,6 @@ import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.wb.swt.SWTResourceManager;
 
 import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.services.GUI.CustomControls.CustomControlAcceptButton;
-import uw.cs.watform.forml.services.GUI.CustomControls.CustomControlCancelButton;
 import uw.cs.watform.forml.services.GUI.CustomControls.FPCFeatureNodeCustomControlAcceptButton;
 import uw.cs.watform.forml.services.GUI.CustomControls.FPCFeatureNodeCustomControlCancelButton;
 import uw.cs.watform.forml.services.utilities.ModelUtils;

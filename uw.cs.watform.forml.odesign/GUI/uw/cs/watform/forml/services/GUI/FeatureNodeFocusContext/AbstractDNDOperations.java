@@ -1,6 +1,5 @@
 package uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext;
 
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.jface.text.contentassist.ContentAssistant;
 import org.eclipse.swt.dnd.DND;
 import org.eclipse.swt.dnd.DragSource;
@@ -9,8 +8,6 @@ import org.eclipse.swt.dnd.DragSourceListener;
 import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
 import org.eclipse.swt.widgets.List;
-import org.eclipse.xtext.nodemodel.ICompositeNode;
-import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
 import org.eclipse.xtext.ui.editor.XtextSourceViewer;
 
 public class AbstractDNDOperations {

@@ -20,11 +20,10 @@ import org.eclipse.swt.custom.CCombo;
 import org.eclipse.swt.custom.TreeEditor;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
-import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.GridData;
+import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
@@ -36,8 +35,6 @@ import org.eclipse.swt.widgets.TreeColumn;
 import org.eclipse.swt.widgets.TreeItem;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import uw.cs.watform.forml.forml.Action;
-import uw.cs.watform.forml.forml.ExprRef;
 import uw.cs.watform.forml.forml.FeatureModule;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Guard;
@@ -45,14 +42,12 @@ import uw.cs.watform.forml.forml.Roleable;
 import uw.cs.watform.forml.forml.Transition;
 import uw.cs.watform.forml.forml.Trigger;
 import uw.cs.watform.forml.forml.WCAList;
-import uw.cs.watform.forml.forml.WCE;
 import uw.cs.watform.forml.services.internal.CustomMessageDialogs;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
 import uw.cs.watform.forml.services.utilities.RepresentationsUtils;
 import uw.cs.watform.forml.viewpoint.xtext.support.AbstractShellContainer;
 import uw.cs.watform.forml.viewpoint.xtext.support.XtextEmbeddedEditorForCrossReferences2;
-import org.eclipse.swt.layout.GridLayout;
 
 public class CustomTreeNodeForConsistencyManagement extends org.eclipse.swt.widgets.Composite {
 

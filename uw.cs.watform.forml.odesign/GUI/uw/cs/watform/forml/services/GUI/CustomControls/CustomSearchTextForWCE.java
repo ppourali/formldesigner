@@ -4,25 +4,16 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
-import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.List;
-import org.eclipse.swt.widgets.Menu;
-import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.wb.swt.SWTResourceManager;
 
-import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.ExprRef;
 import uw.cs.watform.forml.forml.Feature;
-import uw.cs.watform.forml.forml.Message;
-import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.services.GUI.CustomPopupMenuForWCE;
 import uw.cs.watform.forml.services.GUI.FrmShellForTriggerOperationsView;
-import uw.cs.watform.forml.services.GUI.PopupContainer;
-import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class CustomSearchTextForWCE extends Composite {
 

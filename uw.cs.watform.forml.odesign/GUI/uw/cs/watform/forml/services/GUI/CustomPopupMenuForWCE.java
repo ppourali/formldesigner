@@ -8,24 +8,11 @@ import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 
-import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Entity;
-import uw.cs.watform.forml.forml.ExprRef;
 import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.Message;
-import uw.cs.watform.forml.forml.RefMessage;
-import uw.cs.watform.forml.forml.ReferenceType;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.System;
-import uw.cs.watform.forml.forml.impl.BoolTypeImpl;
-import uw.cs.watform.forml.forml.impl.EntityImpl;
-import uw.cs.watform.forml.forml.impl.FeatureImpl;
-import uw.cs.watform.forml.forml.impl.IntTypeImpl;
-import uw.cs.watform.forml.forml.impl.ReferenceTypeImpl;
 import uw.cs.watform.forml.services.GUI.CustomControls.CustomSearchTextForWCE;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class CustomPopupMenuForWCE {

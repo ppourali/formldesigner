@@ -1,13 +1,7 @@
 package uw.cs.watform.forml.services.GUI.TransitionDialogBox;
 
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.jface.text.contentassist.ContentAssistant;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.dnd.DND;
-import org.eclipse.swt.dnd.DragSource;
-import org.eclipse.swt.dnd.DragSourceEvent;
-import org.eclipse.swt.dnd.DragSourceListener;
 import org.eclipse.swt.dnd.DropTarget;
 import org.eclipse.swt.dnd.DropTargetEvent;
 import org.eclipse.swt.dnd.DropTargetListener;
@@ -15,23 +9,14 @@ import org.eclipse.swt.dnd.TextTransfer;
 import org.eclipse.swt.dnd.Transfer;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.List;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.ToolTip;
-import org.eclipse.xtext.nodemodel.ICompositeNode;
-import org.eclipse.xtext.resource.XtextResource;
 
-import uw.cs.watform.forml.extensions.EmbeddedLinkEditor.CustomEmbeddedEditorResourceProvider;
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Function;
 import uw.cs.watform.forml.forml.Output;
 import uw.cs.watform.forml.forml.RefMessage;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.forml.WCA;
-import uw.cs.watform.forml.forml.WCAList;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.ModelUtils2;
 
 public class DNDOperationsForAction extends AbstractDNDOperations {

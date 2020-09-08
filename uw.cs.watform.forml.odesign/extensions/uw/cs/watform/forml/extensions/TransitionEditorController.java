@@ -1,8 +1,8 @@
 package uw.cs.watform.forml.extensions;
 
-import java.util.function.Consumer;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Consumer;
 
 import org.eclipse.eef.EEFCustomWidgetDescription;
 import org.eclipse.eef.core.api.EditingContextAdapter;

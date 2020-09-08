@@ -6,16 +6,12 @@ import java.util.List;
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.AttributeType;
 import uw.cs.watform.forml.forml.Cardinality;
-import uw.cs.watform.forml.forml.Concept;
 import uw.cs.watform.forml.forml.ExprRef;
 import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Message;
 import uw.cs.watform.forml.forml.Multiplicity;
-import uw.cs.watform.forml.forml.ReferenceType;
-import uw.cs.watform.forml.forml.UndefinedType;
 import uw.cs.watform.forml.forml.WorldModel;
-import uw.cs.watform.forml.forml.impl.UndefinedTypeImpl;
 
 public final class WorldModelCommonServices {
 

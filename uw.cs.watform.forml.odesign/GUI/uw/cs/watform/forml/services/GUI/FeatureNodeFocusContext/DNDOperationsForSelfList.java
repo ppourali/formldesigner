@@ -12,9 +12,6 @@ import org.eclipse.swt.dnd.Transfer;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.List;
 
-import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.services.utilities.ModelOperations2;
-
 public class DNDOperationsForSelfList {
 
 	protected static List dragSource;

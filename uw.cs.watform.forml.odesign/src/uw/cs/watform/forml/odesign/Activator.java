@@ -11,8 +11,6 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
 
 import uw.cs.watform.forml.services.handlers.DiagramHandler;
-import uw.cs.watform.forml.services.keyboard.DiagramKeyHandler;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 /**
  * The activator class controls the plug-in life cycle

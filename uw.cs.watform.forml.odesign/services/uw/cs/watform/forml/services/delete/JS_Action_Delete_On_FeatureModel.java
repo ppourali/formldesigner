@@ -13,7 +13,6 @@ import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.XORNode;
 import uw.cs.watform.forml.services.internal.MessageDialogs;
 import uw.cs.watform.forml.services.utilities.ModelDeleteOperations;
-import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 /**

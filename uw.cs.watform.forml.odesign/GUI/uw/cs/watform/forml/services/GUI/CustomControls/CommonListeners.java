@@ -2,7 +2,6 @@ package uw.cs.watform.forml.services.GUI.CustomControls;
 
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
-import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
 
 public class CommonListeners {

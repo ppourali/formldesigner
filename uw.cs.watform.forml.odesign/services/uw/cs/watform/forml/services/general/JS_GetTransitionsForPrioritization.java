@@ -1,23 +1,12 @@
 package uw.cs.watform.forml.services.general;
 
-import javax.swing.JOptionPane;
-import javax.swing.table.TableModel;
-
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.NotEnabledException;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.core.commands.common.NotDefinedException;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommandService;
 
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.impl.*;
-import uw.cs.watform.forml.services.GUI.*;
+import uw.cs.watform.forml.forml.FragmentType;
+import uw.cs.watform.forml.forml.StateMachine;
+import uw.cs.watform.forml.forml.Transition;
 
 /**
  * All the services related to transitions prioritization.

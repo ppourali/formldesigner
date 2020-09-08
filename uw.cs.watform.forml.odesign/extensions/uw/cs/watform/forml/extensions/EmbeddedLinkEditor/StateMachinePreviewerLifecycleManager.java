@@ -1,6 +1,5 @@
 package uw.cs.watform.forml.extensions.EmbeddedLinkEditor;
 
-import org.eclipse.core.runtime.CoreException;
 import org.eclipse.eef.EEFCustomWidgetDescription;
 import org.eclipse.eef.EEFWidgetDescription;
 import org.eclipse.eef.common.ui.api.IEEFFormContainer;
@@ -13,30 +12,16 @@ import org.eclipse.jface.text.source.SourceViewer;
 import org.eclipse.sirius.common.interpreter.api.IInterpreter;
 import org.eclipse.sirius.common.interpreter.api.IVariableManager;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.SelectionListener;
-import org.eclipse.swt.graphics.Rectangle;
-import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.wb.swt.SWTResourceManager;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
 
 import uw.cs.watform.forml.extensions.TransitionEditorController;
-import uw.cs.watform.forml.forml.ExprRef;
 import uw.cs.watform.forml.forml.FeatureModule;
 import uw.cs.watform.forml.forml.Roleable;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Trigger;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.CustomCompositeFeatureModuleSnapShotHolder;
-import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.FPC_SingletonData;
-import uw.cs.watform.forml.services.GUI.GeneralFocusContextViewer.CustomCompositeForCrossReferenceView_TreeStyle;
-import uw.cs.watform.forml.services.GUI.GeneralFocusContextViewer.CustomTreeViewerForCrossReferences;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.services.widgets.JS_TransitionWidgets;
 
 public class StateMachinePreviewerLifecycleManager extends AbstractEEFWidgetLifecycleManager {
 

@@ -1,6 +1,5 @@
 package uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext;
 
-import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.dnd.DND;
 import org.eclipse.swt.dnd.DragSource;
 import org.eclipse.swt.dnd.DragSourceEvent;
@@ -15,7 +14,6 @@ import org.eclipse.swt.widgets.Table;
 
 import uw.cs.watform.forml.forml.Roleable;
 import uw.cs.watform.forml.services.GUI.FeatureNodeFocusContext.NewElementCreation.NewElementsCreationHelperClass;
-import uw.cs.watform.forml.services.utilities.ModelOperations2;
 
 public class DNDOperationsForDirectList {
 

@@ -7,7 +7,24 @@ import javax.swing.JOptionPane;
 
 import org.eclipse.emf.ecore.EObject;
 
-import uw.cs.watform.forml.forml.*;
+import uw.cs.watform.forml.forml.Aggregation;
+import uw.cs.watform.forml.forml.Association;
+import uw.cs.watform.forml.forml.Attribute;
+import uw.cs.watform.forml.forml.Composition;
+import uw.cs.watform.forml.forml.Entity;
+import uw.cs.watform.forml.forml.EnumConst;
+import uw.cs.watform.forml.forml.Enumeration;
+import uw.cs.watform.forml.forml.ExprRef;
+import uw.cs.watform.forml.forml.Feature;
+import uw.cs.watform.forml.forml.FeatureNode;
+import uw.cs.watform.forml.forml.FragmentType;
+import uw.cs.watform.forml.forml.Function;
+import uw.cs.watform.forml.forml.Message;
+import uw.cs.watform.forml.forml.Region;
+import uw.cs.watform.forml.forml.State;
+import uw.cs.watform.forml.forml.StateMachine;
+import uw.cs.watform.forml.forml.Transition;
+import uw.cs.watform.forml.forml.WorldModel;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 /**

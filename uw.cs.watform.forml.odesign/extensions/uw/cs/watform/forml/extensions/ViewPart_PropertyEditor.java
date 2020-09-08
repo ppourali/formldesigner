@@ -1,53 +1,31 @@
 package uw.cs.watform.forml.extensions;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
 import javax.inject.Inject;
 
-import org.eclipse.core.runtime.content.IContentType;
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.jface.text.contentassist.IContentAssistProcessor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.CLabel;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Layout;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.internal.Model;
 import org.eclipse.ui.part.ViewPart;
 import org.eclipse.wb.swt.SWTResourceManager;
-import org.eclipse.xtext.ide.editor.partialEditing.IPartialEditingContentAssistParser;
-import org.eclipse.xtext.resource.IResourceFactory;
 import org.eclipse.xtext.resource.XtextResource;
 import org.eclipse.xtext.resource.XtextResourceSet;
-import org.eclipse.xtext.ui.codetemplates.ui.partialEditing.IPartialEditingContentAssistContextFactory;
 import org.eclipse.xtext.ui.codetemplates.ui.partialEditing.PartialEditingContentAssistContextFactory;
-import org.eclipse.xtext.ui.editor.XtextSourceViewer;
-import org.eclipse.xtext.ui.editor.contentassist.CompletionProposalComputer.State;
 import org.eclipse.xtext.ui.editor.contentassist.antlr.DelegatingContentAssistContextFactory.StatefulFactory;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorFactory;
-import org.eclipse.xtext.ui.editor.embedded.IEditedResourceProvider;
 
 import com.google.inject.Injector;
 import com.google.inject.Provider;
 
 import uw.cs.watform.forml.FormlStandaloneSetup;
-import uw.cs.watform.forml.extensions.ViewPart_PropertyEditor.TransitionRuleParser;
-import uw.cs.watform.forml.formatting.customFormlFormatter;
 import uw.cs.watform.forml.forml.Message;
 import uw.cs.watform.forml.forml.Transition;
 import uw.cs.watform.forml.parser.antlr.FormlParser;
 import uw.cs.watform.forml.services.FormlGrammarAccess;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.ui.contentassist.antlr.PartialFormlContentAssistParser;
 import uw.cs.watform.forml.viewpoint.xtext.support.XtextEmbeddedEditorForPropertyEditor;
 
 @SuppressWarnings({ "restriction", "restriction", "restriction" })

@@ -1,36 +1,30 @@
 package uw.cs.watform.forml.services.general;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-import javax.swing.table.TableModel;
-
-import org.eclipse.core.commands.Command;
-import org.eclipse.core.commands.ExecutionEvent;
-import org.eclipse.core.commands.ExecutionException;
-import org.eclipse.core.commands.NotEnabledException;
-import org.eclipse.core.commands.NotHandledException;
-import org.eclipse.core.commands.common.NotDefinedException;
-import org.eclipse.emf.common.util.BasicEList;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.util.EcoreEList;
-import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.sirius.diagram.DSemanticDiagram;
-import org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeContainerSpec;
-import org.eclipse.sirius.viewpoint.description.tool.ModelOperation;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-import org.eclipse.ui.commands.ICommandService;
 import org.eclipse.xtext.EcoreUtil2;
 
-import uw.cs.watform.forml.extensions.MyView;
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.impl.*;
-import uw.cs.watform.forml.services.GUI.*;
-import uw.cs.watform.forml.services.rename.NameUniquenessVerifier;
+import uw.cs.watform.forml.forml.Attribute;
+import uw.cs.watform.forml.forml.BehaviourModel;
+import uw.cs.watform.forml.forml.Entity;
+import uw.cs.watform.forml.forml.Feature;
+import uw.cs.watform.forml.forml.FeatureModule;
+import uw.cs.watform.forml.forml.FeatureNode;
+import uw.cs.watform.forml.forml.Input;
+import uw.cs.watform.forml.forml.Output;
+import uw.cs.watform.forml.forml.RefMessage;
+import uw.cs.watform.forml.forml.Region;
+import uw.cs.watform.forml.forml.Roleable;
+import uw.cs.watform.forml.forml.State;
+import uw.cs.watform.forml.forml.StateContext;
+import uw.cs.watform.forml.forml.StateMachine;
+import uw.cs.watform.forml.forml.Transition;
+import uw.cs.watform.forml.forml.WorldModel;
+import uw.cs.watform.forml.services.GUI.FrmCustomFeatureSelectionWizard;
+import uw.cs.watform.forml.services.GUI.FrmShellForTransitionSelectInDragNDrop;
 import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
 import uw.cs.watform.forml.services.utilities.ModelUtils;

@@ -1,53 +1,5 @@
 package uw.cs.watform.forml.services.GUI.TransitionDialogBox;
 
-import java.util.ArrayList;
-
-import javax.swing.JOptionPane;
-
-import org.eclipse.swt.widgets.List;
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.swt.SWT;
-import org.eclipse.swt.custom.CCombo;
-import org.eclipse.swt.custom.CLabel;
-import org.eclipse.swt.custom.StyledText;
-import org.eclipse.swt.custom.TableEditor;
-import org.eclipse.swt.dnd.DND;
-import org.eclipse.swt.dnd.DragSource;
-import org.eclipse.swt.dnd.DragSourceEvent;
-import org.eclipse.swt.dnd.DragSourceListener;
-import org.eclipse.swt.dnd.DropTarget;
-import org.eclipse.swt.dnd.DropTargetEvent;
-import org.eclipse.swt.dnd.DropTargetListener;
-import org.eclipse.swt.dnd.TextTransfer;
-import org.eclipse.swt.dnd.Transfer;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Table;
-import org.eclipse.swt.widgets.TableItem;
-import org.eclipse.swt.widgets.Text;
-import org.eclipse.xtext.nodemodel.ICompositeNode;
-import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
-import org.eclipse.xtext.resource.XtextResource;
-import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
-import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorModelAccess;
-
-import uw.cs.watform.forml.extensions.EmbeddedLinkEditor.CustomEmbeddedEditorResourceProvider;
-import uw.cs.watform.forml.forml.Attribute;
-import uw.cs.watform.forml.forml.Concept;
-import uw.cs.watform.forml.forml.ExprRef;
-import uw.cs.watform.forml.forml.Guard;
-import uw.cs.watform.forml.forml.Message;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.forml.WCAList;
-import uw.cs.watform.forml.odesign.GUI.tabularGuard.CommonSpace;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
-import uw.cs.watform.forml.viewpoint.xtext.support.XtextEmbeddedEditorForContextualUI;
-import uw.cs.watform.forml.viewpoint.xtext.support.XtextEmbeddedEditorForCrossReferences2;
-
 public class oldDNDOperationsForListItems {
 /*	private static CommonSpaceForContextualUI commonspace;
 	private static List dragSource;

@@ -1,7 +1,5 @@
 package uw.cs.watform.forml.services.GUI.TransitionDialogBox;
 
-import org.eclipse.swt.widgets.Shell;
-
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Guard;
 import uw.cs.watform.forml.forml.Roleable;

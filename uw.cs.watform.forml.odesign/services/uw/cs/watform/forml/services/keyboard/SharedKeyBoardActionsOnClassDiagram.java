@@ -18,17 +18,13 @@ import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNodeListEditPart;
 import org.eclipse.sirius.diagram.ui.internal.edit.parts.DNodeListElementEditPart;
 import org.eclipse.sirius.diagram.ui.tools.api.util.EditPartTools;
 
-import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Input;
 import uw.cs.watform.forml.forml.Output;
-import uw.cs.watform.forml.forml.WorldModel;
-import uw.cs.watform.forml.services.rename.NameUniquenessVerifier;
 import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelOperations2;
-import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 /**
  * 

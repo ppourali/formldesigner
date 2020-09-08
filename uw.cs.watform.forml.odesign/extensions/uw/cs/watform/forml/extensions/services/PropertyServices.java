@@ -10,14 +10,6 @@
  *******************************************************************************/
 package uw.cs.watform.forml.extensions.services;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.util.EcoreUtil;
-
 import uw.cs.watform.forml.forml.Role;
 
 /**

@@ -1,31 +1,28 @@
 package uw.cs.watform.forml.services.GUI;
 
 import java.awt.Color;
-import java.awt.Insets;
 import java.awt.event.ActionListener;
-import java.util.Iterator;
 
-import javax.swing.DefaultListModel;
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.jface.fieldassist.ContentProposal;
-import org.eclipse.jface.fieldassist.ContentProposalAdapter;
-import org.eclipse.jface.fieldassist.IContentProposal;
-import org.eclipse.jface.fieldassist.IContentProposalListener;
-import org.eclipse.jface.fieldassist.SimpleContentProposalProvider;
-import org.eclipse.jface.fieldassist.TextContentAdapter;
-import org.eclipse.jface.viewers.ILabelProvider;
-import org.eclipse.jface.viewers.ILabelProviderListener;
-import org.eclipse.swt.graphics.Image;
-import org.eclipse.swt.widgets.Control;
 
-import uw.cs.watform.forml.forml.*;
+import uw.cs.watform.forml.forml.Attribute;
+import uw.cs.watform.forml.forml.Entity;
+import uw.cs.watform.forml.forml.ExprRef;
+import uw.cs.watform.forml.forml.Feature;
+import uw.cs.watform.forml.forml.FormlFactory;
+import uw.cs.watform.forml.forml.Message;
+import uw.cs.watform.forml.forml.RefMessage;
+import uw.cs.watform.forml.forml.ReferenceType;
 import uw.cs.watform.forml.forml.System;
-import uw.cs.watform.forml.forml.impl.*;
+import uw.cs.watform.forml.forml.impl.BoolTypeImpl;
+import uw.cs.watform.forml.forml.impl.EntityImpl;
+import uw.cs.watform.forml.forml.impl.FeatureImpl;
+import uw.cs.watform.forml.forml.impl.IntTypeImpl;
+import uw.cs.watform.forml.forml.impl.ReferenceTypeImpl;
+import uw.cs.watform.forml.forml.impl.StringTypeImpl;
 
 
 public class PopupContainer extends JPopupMenu {

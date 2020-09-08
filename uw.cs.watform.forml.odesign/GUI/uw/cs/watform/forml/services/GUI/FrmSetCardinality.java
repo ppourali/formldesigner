@@ -1,54 +1,29 @@
 package uw.cs.watform.forml.services.GUI;
 
-import javax.swing.JFrame;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JPopupMenu;
-import javax.swing.AbstractAction;
-import javax.swing.DefaultCellEditor;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.MouseInfo;
-import java.awt.Window.Type;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.List;
-import java.util.Vector;
-import java.awt.Dimension;
-import java.awt.Color;
 
-import javax.swing.JTable;
-import javax.swing.KeyStroke;
-
-import java.awt.BorderLayout;
-
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableModel;
-
-import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EObject;
-
-
-import javax.swing.ListSelectionModel;
-import javax.swing.JScrollPane;
-import uw.cs.watform.forml.forml.*;
-import uw.cs.watform.forml.forml.impl.*;
+import javax.swing.AbstractAction;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
+import javax.swing.JTextField;
+import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.JTextField;
-import javax.swing.JSplitPane;
-import javax.swing.JPanel;
-import javax.swing.JSeparator;;
+
+import uw.cs.watform.forml.forml.Attribute;;
 
 
 public class FrmSetCardinality extends JDialog {

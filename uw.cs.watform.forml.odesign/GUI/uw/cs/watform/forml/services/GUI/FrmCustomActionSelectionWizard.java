@@ -1,37 +1,39 @@
 package uw.cs.watform.forml.services.GUI;
 
-import javax.swing.JFrame;
-import javax.swing.UIManager;
-
-import java.awt.Dimension;
-import java.awt.Window.Type;
-import java.util.ArrayList;
-import java.util.List;
-import java.awt.Frame;
-import java.awt.Toolkit;
-import java.awt.Dialog.ModalExclusionType;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-
-import java.awt.BorderLayout;
-import java.awt.Font;
-import java.awt.Component;
-import java.awt.Container;
 import java.awt.Color;
-import javax.swing.border.BevelBorder;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.util.List;
+
+import javax.swing.AbstractAction;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JSeparator;
+import javax.swing.JTextField;
+import javax.swing.JTree;
+import javax.swing.KeyStroke;
+import javax.swing.UIManager;
 import javax.swing.border.EtchedBorder;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreeSelectionModel;
 
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.ecore.EAttribute;
-import org.eclipse.emf.ecore.EDataType;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.xtext.EcoreUtil2;
 
-import uw.cs.watform.forml.forml.Entity;
 import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FormlFactory;
 import uw.cs.watform.forml.forml.Message;
@@ -40,33 +42,8 @@ import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.Transition;
 import uw.cs.watform.forml.forml.WorldModel;
 import uw.cs.watform.forml.services.rename.NameUniquenessVerifier;
-import uw.cs.watform.forml.services.utilities.ModelOperations2;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 import uw.cs.watform.forml.services.utilities.WorldModelCommonServices;
-
-import javax.swing.JTextField;
-import javax.swing.JTextPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTree;
-import javax.swing.KeyStroke;
-import javax.swing.AbstractAction;
-import javax.swing.Box;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-
-import java.awt.TextField;
-import javax.swing.JSeparator;
-import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.event.TreeSelectionListener;
-import javax.swing.event.TreeSelectionEvent;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.net.URL;
 
 public class FrmCustomActionSelectionWizard extends JDialog {
 

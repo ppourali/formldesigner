@@ -1,42 +1,5 @@
 package uw.cs.watform.forml.services.utilities;
 
-/*******************************************************************************
- * Copyright (c) 2008, 2009, 2014 THALES GLOBAL SERVICES.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *    Obeo - initial API and implementation
- *******************************************************************************/
-//package org.eclipse.sirius.common.ui.tools.api.util;
-
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import org.eclipse.core.resources.IResource;
-import org.eclipse.emf.transaction.RunnableWithResult;
-//import org.eclipse.sirius.common.ui.Messages;
-//import org.eclipse.sirius.common.ui.SiriusTransPlugin;
-//import org.eclipse.sirius.common.ui.tools.api.view.IExpandSelectionTarget;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.ui.IEditorPart;
-import org.eclipse.ui.IPerspectiveDescriptor;
-import org.eclipse.ui.ISelectionListener;
-import org.eclipse.ui.ISelectionService;
-import org.eclipse.ui.IViewPart;
-import org.eclipse.ui.IWorkbench;
-import org.eclipse.ui.IWorkbenchPage;
-import org.eclipse.ui.IWorkbenchPart;
-import org.eclipse.ui.IWorkbenchPartReference;
-import org.eclipse.ui.IWorkbenchPartSite;
-import org.eclipse.ui.IWorkbenchWindow;
-import org.eclipse.ui.PartInitException;
-import org.eclipse.ui.PlatformUI;
-
 /**
  * Static useful eclipse ui methods.
  * 

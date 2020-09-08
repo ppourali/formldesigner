@@ -3,24 +3,13 @@ package uw.cs.watform.forml.services.validation;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
-import uw.cs.watform.forml.forml.Feature;
 import uw.cs.watform.forml.forml.FeatureModule;
-import uw.cs.watform.forml.forml.FeatureNode;
 import uw.cs.watform.forml.forml.InitState;
-import uw.cs.watform.forml.forml.Input;
-import uw.cs.watform.forml.forml.Message;
-import uw.cs.watform.forml.forml.Output;
-import uw.cs.watform.forml.forml.RefMessage;
 import uw.cs.watform.forml.forml.Region;
 import uw.cs.watform.forml.forml.State;
 import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.services.GUI.CustomMessageDialog;
-import uw.cs.watform.forml.services.utilities.ModelOperations;
 import uw.cs.watform.forml.services.utilities.ModelUtils;
 
 public class JS_ValidationFeatureModule {

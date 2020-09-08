@@ -12,7 +12,6 @@
 package uw.cs.watform.forml.services.virtualresource;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.emf.common.command.CommandStack;
@@ -32,26 +31,19 @@ import org.eclipse.emf.transaction.RecordingCommand;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.emf.transaction.util.TransactionUtil;
 import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.widgets.Display;
-import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.nodemodel.ICompositeNode;
 import org.eclipse.xtext.nodemodel.util.NodeModelUtils;
 import org.eclipse.xtext.parser.IParseResult;
 import org.eclipse.xtext.resource.XtextResource;
-import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditor;
 import org.eclipse.xtext.ui.editor.embedded.EmbeddedEditorModelAccess;
 
 import com.google.inject.Injector;
-import uw.cs.watform.forml.viewpoint.xtext.support.Activator;
+
 import uw.cs.watform.forml.extensions.EmbeddedLinkEditor.CustomEmbeddedEditorResourceProvider;
-import uw.cs.watform.forml.forml.FormlFactory;
-import uw.cs.watform.forml.forml.Guard;
-import uw.cs.watform.forml.forml.Transition;
-import uw.cs.watform.forml.forml.Trigger;
-import uw.cs.watform.forml.forml.WCAList;
-import uw.cs.watform.forml.forml.WorldModel;
 import uw.cs.watform.forml.forml.System;
+import uw.cs.watform.forml.forml.WorldModel;
+import uw.cs.watform.forml.viewpoint.xtext.support.Activator;
 
 /* largely inspired by "org.eclipse.xtext.gmf.glue" from XText examples */
 public class XtextEmbeddedEditorOperationsOnly {

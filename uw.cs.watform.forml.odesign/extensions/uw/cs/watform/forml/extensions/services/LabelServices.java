@@ -10,19 +10,7 @@
  *******************************************************************************/
 package uw.cs.watform.forml.extensions.services;
 
-import java.util.List;
-
-import javax.swing.event.ChangeEvent;
-
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.sirius.diagram.DDiagramElement;
-
-
-import com.google.common.base.Predicate;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-
-import uw.cs.watform.forml.forml.*;
 
 /**
  * Manage the diagram elements' labels.

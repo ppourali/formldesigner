@@ -3,10 +3,7 @@ package uw.cs.watform.forml.services.GUI.TransitionDialogBox.NewElementCreation;
 import org.eclipse.emf.transaction.RecordingCommand;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.emf.transaction.util.TransactionUtil;
-import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Event;
-import org.eclipse.swt.widgets.List;
 
 import uw.cs.watform.forml.forml.Attribute;
 import uw.cs.watform.forml.forml.Entity;

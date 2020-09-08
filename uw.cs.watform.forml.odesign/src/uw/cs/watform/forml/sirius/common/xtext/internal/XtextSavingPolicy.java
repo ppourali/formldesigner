@@ -13,8 +13,6 @@ package uw.cs.watform.forml.sirius.common.xtext.internal;
 import java.util.Collection;
 import java.util.Map;
 
-import javax.swing.JOptionPane;
-
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.sirius.business.api.session.SavingPolicy;

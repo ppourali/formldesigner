@@ -7,9 +7,9 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.wb.swt.SWTResourceManager;
 
 import uw.cs.watform.forml.services.utilities.ModelUtils;
-import org.eclipse.wb.swt.SWTResourceManager;
 
 public class CustomCompositeSearchForEveryThing extends Composite {
 
