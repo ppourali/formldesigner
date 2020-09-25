@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <groupId>uw.cs.watform</groupId>
+  <artifactId>formldesinger</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>FORML Designer</name>
+  
+	<properties>
+	</properties>
+	
+	<modules>
+		<module>uw.cs.watform.forml</module>
+		<module>uw.cs.watform.forml.viewpoint.feature.xtext.support</module>
+		<module>uw.cs.watform.forml.viewpoint.xtext.support.update</module>
+		<module>uw.cs.watform.forml.odesign</module>
+	</modules>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		
+	</dependencies>
+  
+
+
+  
+
+</project>
