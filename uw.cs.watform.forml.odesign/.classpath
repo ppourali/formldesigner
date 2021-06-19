@@ -10,7 +10,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
-	<classpathentry kind="lib" path="C:/Users/p84132445/Downloads/diff-1.3.2-v20120918-1125.jar"/>
-	<classpathentry kind="lib" path="C:/Users/p84132445/Downloads/match-1.3.2-v20120918-1125.jar"/>
+	<classpathentry kind="lib" path="dependencies/diff-1.3.2-v20120918-1125.jar"/>
+	<classpathentry kind="lib" path="dependencies/match-1.3.2-v20120918-1125.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
